@@ -1,0 +1,241 @@
+{
+  "Metadata": {
+    "title": "Pousada Dona Marta | Pinheira Beach, Palhoça - Brazil",
+    "description": "Just 100 meters from Pinheira Beach. Fully equipped accommodations, warm hospitality and the tranquility of the Santa Catarina coast. Book your stay at Pousada Dona Marta."
+  },
+  "Nav": {
+    "home": "Home",
+    "accommodations": "Accommodations",
+    "location": "Location",
+    "contact": "Contact",
+    "bookNow": "Book Now",
+    "languageLabel": "Language",
+    "menuLabel": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "Hero": {
+    "badge": "Enseada da Pinheira · Santa Catarina, Brazil",
+    "titleLine1": "Pousada",
+    "titleLine2": "Dona Marta",
+    "subtitle": "Modern comfort and the calm of the Santa Catarina coast, 100 meters from the sand at Pinheira Beach.",
+    "ctaPrimary": "Book now",
+    "ctaSecondary": "Discover the inn",
+    "scrollHint": "Scroll to discover",
+    "distanceBadge": "100m from the beach",
+    "superhostBadge": "Airbnb Superhost"
+  },
+  "About": {
+    "badge": "Our story",
+    "title": "More than a place to stay",
+    "paragraph1": "Founded with love more than 30 years ago on Pinheira Beach, Pousada Dona Marta is part of the story of this place — and of our own family. Over the years, we've watched guests become friends who return year after year.",
+    "paragraph2": "Today we blend modern comfort with the simplicity of coastal life, warm hospitality and our own organic garden, in a setting designed for families and anyone looking for true rest — just steps from the sea.",
+    "cta": "Talk to us",
+    "stats": [
+      { "value": "30+", "label": "years of history" },
+      { "value": "100m", "label": "from the beach" },
+      { "value": "3", "label": "accommodation types" },
+      { "value": "5★", "label": "Airbnb Superhost" }
+    ]
+  },
+  "Amenities": {
+    "badge": "Amenities",
+    "title": "Everything you need to relax",
+    "subtitle": "A complete structure designed for your comfort, from check-in to check-out.",
+    "items": [
+      { "icon": "snowflake", "title": "Air conditioning", "description": "Thermal comfort in every accommodation, in any season." },
+      { "icon": "tv", "title": "Smart TV", "description": "Plenty of entertainment to unwind after a day at the beach." },
+      { "icon": "chefHat", "title": "Full kitchen", "description": "Prepare your own meals with total freedom and convenience." },
+      { "icon": "sprout", "title": "Organic garden", "description": "Fresh herbs and vegetables grown right at the inn." },
+      { "icon": "car", "title": "Private parking", "description": "A free, secure spot in a gated area with an electronic gate." },
+      { "icon": "flame", "title": "Barbecue areas", "description": "Well-equipped spaces to gather family and friends." },
+      { "icon": "users", "title": "Common areas", "description": "Shared spaces to relax and socialize outdoors." },
+      { "icon": "trees", "title": "Nature trails", "description": "Natural trails just steps away, amid preserved nature." },
+      { "icon": "sailboat", "title": "Boat tours", "description": "Explore the Pinheira inlet on unforgettable tours." }
+    ]
+  },
+  "Accommodations": {
+    "badge": "Where to stay",
+    "title": "Choose the perfect accommodation",
+    "subtitle": "Three different ways to experience Pousada Dona Marta, all just steps from the sea.",
+    "cta": "View details",
+    "reserveCta": "Book this accommodation",
+    "featuresTitle": "What's included",
+    "items": {
+      "casa-no-condominio": {
+        "name": "House in the Condominium",
+        "tagline": "The Patio Suite: privacy and comfort",
+        "description": "Located in a reserved area of the condominium, the Patio Suite is perfect for couples or small families who value privacy and tranquility, without giving up comfort and security.",
+        "capacity": "Up to 2 guests",
+        "features": [
+          "Fully private area",
+          "Private patio",
+          "Gated, secure condominium",
+          "Fully equipped kitchen",
+          "Private parking",
+          "Ideal for couples"
+        ]
+      },
+      "predio-1": {
+        "name": "Building I",
+        "tagline": "Views, comfort and versatility",
+        "description": "Building I offers cozy apartments across blocks A and B, with options facing the sea or with a privileged view of the area — easy beach access for couples and families who value convenience.",
+        "capacity": "Up to 2 bedrooms",
+        "features": [
+          "Privileged view",
+          "Air conditioning",
+          "Smart TV",
+          "Equipped kitchen",
+          "Easy beach access",
+          "Parking"
+        ]
+      },
+      "predio-2": {
+        "name": "Building II",
+        "tagline": "Room to enjoy with a group",
+        "description": "Designed for those traveling with family or friends, Building II has up to 3 bedrooms and its own balcony with a barbecue — plenty of room to comfortably host up to 6 people.",
+        "capacity": "Up to 6 guests",
+        "features": [
+          "Balcony with barbecue",
+          "Up to 3 bedrooms",
+          "Air conditioning",
+          "Smart TV",
+          "Equipped kitchen",
+          "Private parking"
+        ]
+      }
+    }
+  },
+  "Testimonials": {
+    "badge": "Testimonials",
+    "title": "What our guests say",
+    "subtitle": "Real stories from those who have lived the Dona Marta experience.",
+    "placeholderNotice": "Sample testimonials — replace with your guests' real reviews.",
+    "items": [
+      { "name": "Marina S.", "location": "São Paulo, Brazil", "rating": 5, "text": "Amazing place, super close to the beach and the hosts were very attentive. We'll definitely be back!" },
+      { "name": "Rafael T.", "location": "Curitiba, Brazil", "rating": 5, "text": "Spotless house, everything very clean and organized. The setup for families is excellent." },
+      { "name": "Camila O.", "location": "Porto Alegre, Brazil", "rating": 5, "text": "Wonderful experience, waking up near the sea is priceless. I'd recommend it with my eyes closed." },
+      { "name": "Diego M.", "location": "Florianópolis, Brazil", "rating": 5, "text": "Warm hospitality from start to finish. The inn had everything we needed." }
+    ]
+  },
+  "Location": {
+    "badge": "Where we are",
+    "title": "The tranquility of Enseada da Pinheira",
+    "subtitle": "Beach, nature and tours just minutes from the inn's front door.",
+    "addressLabel": "Address",
+    "directionsCta": "Get directions",
+    "places": [
+      { "icon": "waves", "name": "Pinheira Beach", "distance": "100 m", "description": "One of the calmest beaches on the south coast of Santa Catarina, with gentle waters — perfect for families, just steps from the inn." },
+      { "icon": "anchor", "name": "Whale Watching", "distance": "Jul – Nov", "description": "Between July and November you can spot southern right whales in their natural habitat, close to the shore." },
+      { "icon": "sailboat", "name": "Mullet Fishing", "distance": "May – Jul", "description": "The traditional artisanal mullet fishing season brings the community together and delights visitors." },
+      { "icon": "trees", "name": "Nature Trails", "distance": "Nearby", "description": "Trails of different levels through preserved Atlantic Forest, with incredible coastal views." },
+      { "icon": "palmtree", "name": "Boat Tours", "distance": "On request", "description": "Explore islands, headlands and bays in the area on tours that reveal a different side of the coast." },
+      { "icon": "sunset", "name": "Nightlife", "distance": "In the area", "description": "Bars and restaurants with live music and fresh seafood to end a beach day right." }
+    ]
+  },
+  "FAQ": {
+    "badge": "FAQ",
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know before booking.",
+    "items": [
+      { "question": "Do you accept pets?", "answer": "Yes, we accept small pets with advance notice at the time of booking. We just ask for care with the furniture and respect for common areas — any damage is the guest's responsibility." },
+      { "question": "What are the check-in and check-out times?", "answer": "Check-in from 2pm and check-out by 11am. Need an early arrival or late departure? Check availability with us before booking." },
+      { "question": "Is parking available?", "answer": "Yes. We offer free on-site parking, in a gated area with an electronic gate." },
+      { "question": "Do you offer daily housekeeping?", "answer": "We don't offer daily housekeeping during your stay. A full cleaning is done before each guest's arrival." },
+      { "question": "How does the booking and cancellation policy work?", "answer": "Your booking is confirmed with an advance payment, agreed at the time of booking. Late cancellations or no-shows may result in the paid amount being withheld — get in touch to check the conditions before cancelling." }
+    ]
+  },
+  "Reservation": {
+    "badge": "Direct booking",
+    "title": "Let's plan your stay",
+    "subtitle": "Fill in the details below and send your request — our team will confirm availability and get back to you shortly.",
+    "form": {
+      "nameLabel": "Full name",
+      "namePlaceholder": "What should we call you?",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@email.com",
+      "phoneLabel": "Phone / WhatsApp",
+      "phonePlaceholder": "+1 (000) 000-0000",
+      "accommodationLabel": "Preferred accommodation",
+      "accommodationPlaceholder": "Select an accommodation",
+      "guestsLabel": "Number of guests",
+      "guestsPlaceholder": "Select",
+      "datesLabel": "Check-in and check-out",
+      "datesPlaceholder": "Select the dates",
+      "messageLabel": "Notes",
+      "messagePlaceholder": "Tell us a bit more about your trip (optional)",
+      "submit": "Send booking request",
+      "sending": "Sending...",
+      "whatsappAlt": "Prefer to talk on WhatsApp?",
+      "guestsOption": "{count, plural, one {# guest} other {# guests}}",
+      "errors": {
+        "required": "This field is required.",
+        "invalidEmail": "Enter a valid email address.",
+        "invalidPhone": "Enter a valid phone number.",
+        "invalidDates": "Select the check-in and check-out dates."
+      }
+    },
+    "whatsappMessage": {
+      "greeting": "Hello! I'd like to make a reservation at Pousada Dona Marta.",
+      "name": "Name",
+      "accommodation": "Accommodation",
+      "guests": "Guests",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "notes": "Notes",
+      "contact": "Contact"
+    },
+    "dialog": {
+      "success": {
+        "title": "Request sent!",
+        "description": "We've received your request and our team will confirm availability shortly. Want a faster answer? Reach us right now:",
+        "whatsapp": "Message on WhatsApp",
+        "call": "Call now"
+      },
+      "error": {
+        "title": "We couldn't send it",
+        "description": "Something went wrong while sending your request. Try again in a moment, or reach us directly:",
+        "whatsapp": "Message on WhatsApp",
+        "call": "Call now"
+      }
+    },
+    "sidebar": {
+      "title": "Prefer to talk to us directly?",
+      "description": "We're available on WhatsApp and email to answer any questions about your stay.",
+      "responseTime": "We reply quickly, every day."
+    }
+  },
+  "Contact": {
+    "badge": "Get in touch",
+    "title": "We're nearby to help",
+    "subtitle": "Questions, availability or a special request: reach us through whichever channel you prefer.",
+    "phoneTitle": "Phone / WhatsApp",
+    "emailTitle": "Email",
+    "addressTitle": "Address",
+    "socialTitle": "Social media",
+    "whatsappCta": "Chat on WhatsApp",
+    "emailCta": "Send an email",
+    "mapTitle": "Get directions"
+  },
+  "Footer": {
+    "description": "Pousada Dona Marta blends modern comfort with the tranquility of the Santa Catarina coast, 100 meters from Pinheira Beach.",
+    "linksTitle": "Navigation",
+    "contactTitle": "Contact",
+    "followTitle": "Follow us",
+    "rights": "All rights reserved.",
+    "madeWith": "Made with care in Enseada da Pinheira."
+  },
+  "Common": {
+    "readMore": "Learn more",
+    "viewAll": "View all",
+    "back": "Back",
+    "night": "night",
+    "nights": "nights",
+    "from": "from",
+    "close": "Close",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "instagram": "Instagram",
+    "scrollToTop": "Back to top"
+  }
+}

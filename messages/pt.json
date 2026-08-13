@@ -1,0 +1,241 @@
+{
+  "Metadata": {
+    "title": "Pousada Dona Marta | Praia da Pinheira, Palhoça - SC",
+    "description": "A 100 metros da Praia da Pinheira. Acomodações completas, atendimento acolhedor e a tranquilidade do litoral de Santa Catarina. Reserve sua estadia na Pousada Dona Marta."
+  },
+  "Nav": {
+    "home": "Início",
+    "accommodations": "Acomodações",
+    "location": "Localização",
+    "contact": "Contato",
+    "bookNow": "Reservar",
+    "languageLabel": "Idioma",
+    "menuLabel": "Menu",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "Hero": {
+    "badge": "Enseada da Pinheira · Santa Catarina",
+    "titleLine1": "Pousada",
+    "titleLine2": "Dona Marta",
+    "subtitle": "Conforto moderno e a tranquilidade do litoral catarinense, a 100 metros da areia da Praia da Pinheira.",
+    "ctaPrimary": "Reservar agora",
+    "ctaSecondary": "Conhecer a pousada",
+    "scrollHint": "Role para descobrir",
+    "distanceBadge": "100m da praia",
+    "superhostBadge": "Superhost Airbnb"
+  },
+  "About": {
+    "badge": "Nossa história",
+    "title": "Mais do que hospedagem",
+    "paragraph1": "Fundada com carinho há mais de 30 anos na Praia da Pinheira, a Pousada Dona Marta faz parte da história do lugar — e da nossa própria família. Ao longo desse tempo, vimos hóspedes virarem amigos e voltarem ano após ano.",
+    "paragraph2": "Hoje unimos o conforto moderno à simplicidade da vida litorânea, com atendimento acolhedor e uma horta orgânica própria, em um ambiente pensado para famílias e para quem busca descanso de verdade — a poucos passos do mar.",
+    "cta": "Fale com a gente",
+    "stats": [
+      { "value": "30+", "label": "anos de história" },
+      { "value": "100m", "label": "até a praia" },
+      { "value": "3", "label": "tipos de acomodação" },
+      { "value": "5★", "label": "Superhost Airbnb" }
+    ]
+  },
+  "Amenities": {
+    "badge": "Comodidades",
+    "title": "Tudo o que você precisa para relaxar",
+    "subtitle": "Estrutura completa pensada para o seu conforto, do check-in ao check-out.",
+    "items": [
+      { "icon": "snowflake", "title": "Ar-condicionado", "description": "Conforto térmico em todas as acomodações, em qualquer estação." },
+      { "icon": "tv", "title": "Smart TV", "description": "Entretenimento à vontade para relaxar depois de um dia de praia." },
+      { "icon": "chefHat", "title": "Cozinha completa", "description": "Prepare suas próprias refeições com total liberdade e praticidade." },
+      { "icon": "sprout", "title": "Horta orgânica", "description": "Temperos e vegetais frescos cultivados na própria pousada." },
+      { "icon": "car", "title": "Estacionamento privativo", "description": "Vaga segura e gratuita, em área interna com portão eletrônico." },
+      { "icon": "flame", "title": "Churrasqueiras", "description": "Espaços equipados para reunir a família e os amigos." },
+      { "icon": "users", "title": "Áreas de convivência", "description": "Ambientes compartilhados para descansar e socializar ao ar livre." },
+      { "icon": "trees", "title": "Trilhas ecológicas", "description": "Percursos naturais a poucos passos, em meio à natureza preservada." },
+      { "icon": "sailboat", "title": "Passeios de barco", "description": "Explore a Enseada da Pinheira em passeios inesquecíveis." }
+    ]
+  },
+  "Accommodations": {
+    "badge": "Onde ficar",
+    "title": "Escolha a acomodação perfeita",
+    "subtitle": "Três formas diferentes de viver a Pousada Dona Marta, todas a poucos passos do mar.",
+    "cta": "Ver detalhes",
+    "reserveCta": "Reservar esta acomodação",
+    "featuresTitle": "O que está incluído",
+    "items": {
+      "casa-no-condominio": {
+        "name": "Casa no Condomínio",
+        "tagline": "A Suíte Pátio: privacidade e aconchego",
+        "description": "Localizada em uma área reservada do condomínio, a Suíte Pátio é perfeita para casais ou famílias pequenas que valorizam privacidade e tranquilidade, sem abrir mão do conforto e da segurança.",
+        "capacity": "Até 2 hóspedes",
+        "features": [
+          "Ambiente totalmente reservado",
+          "Pátio privativo",
+          "Condomínio fechado e seguro",
+          "Cozinha completa equipada",
+          "Estacionamento privativo",
+          "Ideal para casais"
+        ]
+      },
+      "predio-1": {
+        "name": "Prédio I",
+        "tagline": "Vista, conforto e versatilidade",
+        "description": "O Prédio I reúne apartamentos aconchegantes nos blocos A e B, com opções de frente para o mar ou com vista privilegiada da região — fácil acesso à praia para casais e famílias que valorizam praticidade.",
+        "capacity": "Até 2 quartos",
+        "features": [
+          "Vista privilegiada",
+          "Ar-condicionado",
+          "Smart TV",
+          "Cozinha equipada",
+          "Fácil acesso à praia",
+          "Estacionamento"
+        ]
+      },
+      "predio-2": {
+        "name": "Prédio II",
+        "tagline": "Espaço para curtir em grupo",
+        "description": "Pensado para quem viaja em família ou com amigos, o Prédio II tem até 3 quartos e sacada com churrasqueira própria — espaço de sobra para acomodar até 6 pessoas com conforto.",
+        "capacity": "Até 6 hóspedes",
+        "features": [
+          "Sacada com churrasqueira",
+          "Até 3 quartos",
+          "Ar-condicionado",
+          "Smart TV",
+          "Cozinha equipada",
+          "Estacionamento privativo"
+        ]
+      }
+    }
+  },
+  "Testimonials": {
+    "badge": "Depoimentos",
+    "title": "O que dizem nossos hóspedes",
+    "subtitle": "Histórias reais de quem já viveu a experiência Dona Marta.",
+    "placeholderNotice": "Depoimentos ilustrativos — substitua pelos comentários reais dos seus hóspedes.",
+    "items": [
+      { "name": "Marina S.", "location": "São Paulo, SP", "rating": 5, "text": "Lugar incrível, super pertinho da praia e os anfitriões muito atenciosos. Voltaremos com certeza!" },
+      { "name": "Rafael T.", "location": "Curitiba, PR", "rating": 5, "text": "Casa impecável, tudo muito limpo e organizado. A estrutura para família é excelente." },
+      { "name": "Camila O.", "location": "Porto Alegre, RS", "rating": 5, "text": "Experiência maravilhosa, acordar perto do mar não tem preço. Recomendo de olhos fechados." },
+      { "name": "Diego M.", "location": "Florianópolis, SC", "rating": 5, "text": "Atendimento acolhedor do início ao fim. A pousada tem tudo o que a gente precisava." }
+    ]
+  },
+  "Location": {
+    "badge": "Onde estamos",
+    "title": "A tranquilidade da Enseada da Pinheira",
+    "subtitle": "Praia, natureza e passeios a poucos minutos da porta da pousada.",
+    "addressLabel": "Endereço",
+    "directionsCta": "Como chegar",
+    "places": [
+      { "icon": "waves", "name": "Praia da Pinheira", "distance": "100 m", "description": "Uma das praias mais tranquilas do litoral sul de SC, com águas calmas — perfeita para famílias, a poucos passos da pousada." },
+      { "icon": "anchor", "name": "Observação de Baleias", "distance": "Jul – Nov", "description": "Entre julho e novembro é possível avistar baleias-francas em seu habitat natural, bem perto da costa." },
+      { "icon": "sailboat", "name": "Pesca da Tainha", "distance": "Mai – Jul", "description": "A tradicional pesca artesanal da tainha movimenta a comunidade e encanta visitantes nesses meses." },
+      { "icon": "trees", "name": "Trilhas Ecológicas", "distance": "Nas proximidades", "description": "Trilhas de diferentes níveis em meio à Mata Atlântica preservada, com vistas incríveis do litoral." },
+      { "icon": "palmtree", "name": "Passeios de Barco", "distance": "Sob consulta", "description": "Explore ilhas, costões e baías da região em passeios que revelam outra perspectiva do litoral." },
+      { "icon": "sunset", "name": "Vida Noturna", "distance": "Na região", "description": "Bares e restaurantes com música ao vivo e frutos do mar frescos para fechar bem o dia de praia." }
+    ]
+  },
+  "FAQ": {
+    "badge": "Dúvidas",
+    "title": "Perguntas frequentes",
+    "subtitle": "Tudo o que você precisa saber antes de reservar.",
+    "items": [
+      { "question": "Vocês aceitam animais de estimação?", "answer": "Sim, aceitamos animais de pequeno porte mediante aviso prévio no momento da reserva. Pedimos apenas cuidado com os móveis e respeito às áreas comuns — eventuais danos são de responsabilidade do hóspede." },
+      { "question": "Qual o horário de check-in e check-out?", "answer": "Check-in a partir das 14h e check-out até às 11h. Precisa de entrada antecipada ou saída tardia? Consulte a disponibilidade com a gente antes de reservar." },
+      { "question": "Há estacionamento disponível?", "answer": "Sim. Oferecemos estacionamento gratuito no local, em área interna e com portão eletrônico, para maior segurança." },
+      { "question": "Vocês oferecem serviço de limpeza diário?", "answer": "Não fazemos limpeza diária durante a estadia. A limpeza completa é realizada antes da entrada de cada hóspede." },
+      { "question": "Como funciona a política de reservas e cancelamento?", "answer": "A reserva é confirmada mediante pagamento antecipado, combinado no momento da reserva. Cancelamentos fora do prazo ou não comparecimento podem resultar na retenção do valor pago — fale com a gente para verificar as condições antes de cancelar." }
+    ]
+  },
+  "Reservation": {
+    "badge": "Reserva direta",
+    "title": "Vamos planejar sua estadia",
+    "subtitle": "Preencha os dados abaixo e envie sua solicitação — nossa equipe confirma a disponibilidade e retorna rapidinho.",
+    "form": {
+      "nameLabel": "Nome completo",
+      "namePlaceholder": "Como podemos te chamar?",
+      "emailLabel": "E-mail",
+      "emailPlaceholder": "seu@email.com",
+      "phoneLabel": "Telefone / WhatsApp",
+      "phonePlaceholder": "(00) 00000-0000",
+      "accommodationLabel": "Acomodação desejada",
+      "accommodationPlaceholder": "Selecione uma acomodação",
+      "guestsLabel": "Número de hóspedes",
+      "guestsPlaceholder": "Selecione",
+      "datesLabel": "Check-in e check-out",
+      "datesPlaceholder": "Selecione as datas",
+      "messageLabel": "Observações",
+      "messagePlaceholder": "Conte um pouco mais sobre a sua viagem (opcional)",
+      "submit": "Enviar solicitação de reserva",
+      "sending": "Enviando...",
+      "whatsappAlt": "Prefere falar direto pelo WhatsApp?",
+      "guestsOption": "{count, plural, one {# hóspede} other {# hóspedes}}",
+      "errors": {
+        "required": "Este campo é obrigatório.",
+        "invalidEmail": "Informe um e-mail válido.",
+        "invalidPhone": "Informe um telefone válido.",
+        "invalidDates": "Selecione as datas de check-in e check-out."
+      }
+    },
+    "whatsappMessage": {
+      "greeting": "Olá! Gostaria de fazer uma reserva na Pousada Dona Marta.",
+      "name": "Nome",
+      "accommodation": "Acomodação",
+      "guests": "Hóspedes",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "notes": "Observações",
+      "contact": "Contato"
+    },
+    "dialog": {
+      "success": {
+        "title": "Reserva enviada!",
+        "description": "Recebemos sua solicitação e nossa equipe vai confirmar a disponibilidade em breve. Prefere uma resposta mais rápida? Fale com a gente agora:",
+        "whatsapp": "Chamar no WhatsApp",
+        "call": "Ligar agora"
+      },
+      "error": {
+        "title": "Não conseguimos enviar",
+        "description": "Algo deu errado ao enviar sua solicitação. Tente novamente em instantes ou fale com a gente diretamente:",
+        "whatsapp": "Chamar no WhatsApp",
+        "call": "Ligar agora"
+      }
+    },
+    "sidebar": {
+      "title": "Prefere falar direto com a gente?",
+      "description": "Estamos disponíveis pelo WhatsApp e e-mail para tirar qualquer dúvida sobre sua estadia.",
+      "responseTime": "Respondemos rapidamente, todos os dias."
+    }
+  },
+  "Contact": {
+    "badge": "Fale conosco",
+    "title": "Estamos por perto para ajudar",
+    "subtitle": "Dúvidas, disponibilidade ou uma reserva especial: fale com a gente pelo canal que preferir.",
+    "phoneTitle": "Telefone / WhatsApp",
+    "emailTitle": "E-mail",
+    "addressTitle": "Endereço",
+    "socialTitle": "Redes sociais",
+    "whatsappCta": "Conversar no WhatsApp",
+    "emailCta": "Enviar e-mail",
+    "mapTitle": "Como chegar"
+  },
+  "Footer": {
+    "description": "Pousada Dona Marta combina conforto moderno com a tranquilidade do litoral catarinense, a 100 metros da Praia da Pinheira.",
+    "linksTitle": "Navegação",
+    "contactTitle": "Contato",
+    "followTitle": "Siga a gente",
+    "rights": "Todos os direitos reservados.",
+    "madeWith": "Feito com carinho na Enseada da Pinheira."
+  },
+  "Common": {
+    "readMore": "Saiba mais",
+    "viewAll": "Ver todas",
+    "back": "Voltar",
+    "night": "noite",
+    "nights": "noites",
+    "from": "a partir de",
+    "close": "Fechar",
+    "whatsapp": "WhatsApp",
+    "email": "E-mail",
+    "instagram": "Instagram",
+    "scrollToTop": "Voltar ao topo"
+  }
+}
