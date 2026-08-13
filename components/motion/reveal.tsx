@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
+import { useReliableInView } from "@/components/motion/use-reliable-in-view";
 
 type Direction = "up" | "down" | "left" | "right" | "none";
 
@@ -42,6 +43,7 @@ export function Reveal({
   blur?: boolean;
   spring?: boolean;
 }) {
+  const { ref, inView } = useReliableInView<HTMLDivElement>({ once, amount });
   const offset = getOffset(direction);
 
   const variants: Variants = {
@@ -63,10 +65,10 @@ export function Reveal({
 
   return (
     <motion.div
+      ref={ref}
       className={className}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once, amount }}
+      animate={inView ? "visible" : "hidden"}
       variants={variants}
     >
       {children}

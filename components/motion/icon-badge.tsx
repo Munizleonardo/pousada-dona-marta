@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useReliableInView } from "@/components/motion/use-reliable-in-view";
 
 const SIZE_CLASSES = {
   sm: "size-11",
@@ -27,11 +28,13 @@ export function IconBadge({
   delay?: number;
   className?: string;
 }) {
+  const { ref, inView } = useReliableInView<HTMLSpanElement>({ once: true, amount: 0.6 });
+
   return (
     <motion.span
+      ref={ref}
       initial={{ scale: 0, rotate: -90, opacity: 0 }}
-      whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
-      viewport={{ once: true, amount: 0.6 }}
+      animate={inView ? { scale: 1, rotate: 0, opacity: 1 } : { scale: 0, rotate: -90, opacity: 0 }}
       whileHover={{ scale: 1.15, rotate: 6 }}
       whileTap={{ scale: 0.92 }}
       transition={{ type: "spring", stiffness: 260, damping: 16, delay }}

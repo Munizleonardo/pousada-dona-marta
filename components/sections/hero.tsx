@@ -49,12 +49,12 @@ export function Hero() {
 
         <div className="flex flex-col gap-1 [text-shadow:0_2px_20px_rgba(0,0,0,0.35)]">
           <h1 className="font-heading text-6xl font-semibold leading-[0.95] tracking-tight text-white sm:text-7xl lg:text-8xl">
-            <TextReveal immediate delay={0.28} duration={0.9}>
+            <TextReveal delay={0.28} duration={0.9}>
               {t("titleLine1")}
             </TextReveal>
           </h1>
           <h1 className="font-heading text-6xl font-semibold italic leading-[0.95] tracking-tight text-white sm:text-7xl lg:text-8xl">
-            <TextReveal immediate delay={0.42} duration={0.9}>
+            <TextReveal delay={0.42} duration={0.9}>
               {t("titleLine2")}
             </TextReveal>
           </h1>

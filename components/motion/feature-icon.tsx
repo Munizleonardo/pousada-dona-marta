@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useReliableInView } from "@/components/motion/use-reliable-in-view";
 
 const TONES = [
   "from-primary/25 via-primary/10 to-transparent text-primary",
@@ -35,12 +36,13 @@ export function FeatureIcon({
   className?: string;
 }) {
   const tone = TONES[index % TONES.length];
+  const { ref, inView } = useReliableInView<HTMLSpanElement>({ once: true, amount: 0.6 });
 
   return (
     <motion.span
+      ref={ref}
       initial={{ scale: 0, rotate: -90, opacity: 0 }}
-      whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
-      viewport={{ once: true, amount: 0.6 }}
+      animate={inView ? { scale: 1, rotate: 0, opacity: 1 } : { scale: 0, rotate: -90, opacity: 0 }}
       whileHover={{ scale: 1.08, rotate: 4 }}
       transition={{ type: "spring", stiffness: 260, damping: 16 }}
       className={cn(

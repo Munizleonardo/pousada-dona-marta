@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { StaggerItem } from "@/components/motion/stagger-group";
 import { TiltCard } from "@/components/motion/tilt-card";
+import { useReliableInView } from "@/components/motion/use-reliable-in-view";
 
 export function ContactCard({
   icon,
@@ -16,12 +17,14 @@ export function ContactCard({
   value: string;
   href?: string;
 }) {
+  const { ref, inView } = useReliableInView<HTMLSpanElement>({ once: true, amount: 0.6 });
+
   const inner = (
     <>
       <motion.span
+        ref={ref}
         initial={{ scale: 0, rotate: -90, opacity: 0 }}
-        whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
-        viewport={{ once: true, amount: 0.6 }}
+        animate={inView ? { scale: 1, rotate: 0, opacity: 1 } : { scale: 0, rotate: -90, opacity: 0 }}
         whileHover={{ scale: 1.15, rotate: 6 }}
         whileTap={{ scale: 0.92 }}
         transition={{ type: "spring", stiffness: 260, damping: 16 }}

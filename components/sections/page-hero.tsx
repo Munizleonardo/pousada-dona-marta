@@ -65,7 +65,7 @@ export function PageHero({
           </motion.span>
         ) : null}
         <h1 className="font-heading text-4xl font-semibold tracking-tight text-white [text-shadow:0_2px_16px_rgba(0,0,0,0.4)] sm:text-5xl lg:text-6xl">
-          <TextReveal immediate delay={0.1} duration={0.8}>
+          <TextReveal delay={0.1} duration={0.8}>
             {title}
           </TextReveal>
         </h1>

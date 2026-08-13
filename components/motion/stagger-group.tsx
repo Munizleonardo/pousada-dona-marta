@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
+import { useReliableInView } from "@/components/motion/use-reliable-in-view";
 
 const containerVariants: Variants = {
   hidden: {},
@@ -43,12 +44,14 @@ export function StaggerGroup({
   once?: boolean;
   amount?: number;
 }) {
+  const { ref, inView } = useReliableInView<HTMLDivElement>({ once, amount });
+
   return (
     <motion.div
+      ref={ref}
       className={className}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once, amount }}
+      animate={inView ? "visible" : "hidden"}
       variants={containerVariants}
     >
       {children}
