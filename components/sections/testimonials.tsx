@@ -15,7 +15,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
-type Testimonial = { name: string; location: string; rating: number; text: string };
+type Testimonial = { name: string; location: string; date?: string; rating: number; text: string };
 
 export function Testimonials() {
   const t = useTranslations("Testimonials");
@@ -60,6 +60,7 @@ export function Testimonials() {
                           <span className="text-sm font-medium">{item.name}</span>
                           <span className="text-xs text-muted-foreground">
                             {item.location}
+                            {item.date ? ` · ${item.date}` : ""}
                           </span>
                         </div>
                       </div>
@@ -74,9 +75,7 @@ export function Testimonials() {
             </div>
           </Carousel>
         </Reveal>
-        <p className="text-center text-xs text-muted-foreground">
-          {t("placeholderNotice")}
-        </p>
+        <p className="text-center text-xs text-muted-foreground">{t("sourceNotice")}</p>
       </div>
     </section>
   );

@@ -1,8 +1,7 @@
 "use client";
 
-import { useRef } from "react";
 import { useTranslations } from "next-intl";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { ChevronDown, MapPin, Star } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
@@ -12,19 +11,9 @@ import { HERO_IMAGE } from "@/lib/constants";
 
 export function Hero() {
   const t = useTranslations("Hero");
-  const sectionRef = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start start", "end start"],
-  });
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
-  const contentY = useTransform(scrollYProgress, [0, 1], [0, 140]);
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative flex h-[95svh] min-h-[640px] w-full items-center overflow-hidden bg-neutral-900"
-    >
+    <section className="relative flex h-[95svh] min-h-[640px] w-full items-center overflow-hidden bg-neutral-900">
       <motion.div
         initial={{ scale: 1.28, filter: "brightness(0.55) saturate(0.7)" }}
         animate={{ scale: 1, filter: "brightness(1) saturate(1)" }}
@@ -43,7 +32,9 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/30" />
 
       <motion.div
-        style={{ opacity: contentOpacity, y: contentY }}
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-7 px-4 pb-16 pt-24 sm:px-6 lg:px-8"
       >
         <motion.div
@@ -58,12 +49,12 @@ export function Hero() {
 
         <div className="flex flex-col gap-1 [text-shadow:0_2px_20px_rgba(0,0,0,0.35)]">
           <h1 className="font-heading text-6xl font-semibold leading-[0.95] tracking-tight text-white sm:text-7xl lg:text-8xl">
-            <TextReveal delay={0.28} duration={0.9}>
+            <TextReveal immediate delay={0.28} duration={0.9}>
               {t("titleLine1")}
             </TextReveal>
           </h1>
           <h1 className="font-heading text-6xl font-semibold italic leading-[0.95] tracking-tight text-white sm:text-7xl lg:text-8xl">
-            <TextReveal delay={0.42} duration={0.9}>
+            <TextReveal immediate delay={0.42} duration={0.9}>
               {t("titleLine2")}
             </TextReveal>
           </h1>
@@ -112,7 +103,9 @@ export function Hero() {
       </motion.div>
 
       <motion.div
-        style={{ opacity: contentOpacity }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 0.6 }}
         className="absolute inset-x-0 bottom-6 z-10 flex flex-col items-center gap-2 text-white/90"
       >
         <motion.div

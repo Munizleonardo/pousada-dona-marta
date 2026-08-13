@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { InstagramIcon } from "@/components/icons/instagram-icon";
 import { LogoParks } from "@/components/icons/logo-parks";
+import { Reveal } from "@/components/motion/reveal";
 import { CONTACT } from "@/lib/constants";
 
 export async function Footer() {
@@ -15,7 +16,7 @@ export async function Footer() {
   return (
     <footer className="border-t border-border bg-muted/30">
       <div className="mx-auto flex max-w-7xl flex-col gap-12 px-4 py-16 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-10 md:flex-row md:justify-between">
+        <Reveal className="flex flex-col gap-10 md:flex-row md:justify-between">
           <div className="flex max-w-sm flex-col gap-3">
             <Image
               src="/images/logo.png"
@@ -85,7 +86,7 @@ export async function Footer() {
               </a>
             </div>
           </div>
-        </div>
+        </Reveal>
 
         <div className="flex flex-col gap-2 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <span>

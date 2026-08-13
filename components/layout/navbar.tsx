@@ -157,6 +157,14 @@ export function Navbar() {
                     </Link>
                   </SheetClose>
                 ))}
+                <SheetClose asChild>
+                  <Link
+                    href={{ pathname: "/acomodacoes", hash: "duvidas" }}
+                    className="rounded-lg px-3 py-2.5 text-base font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                  >
+                    {t("faq")}
+                  </Link>
+                </SheetClose>
               </div>
               <div className="flex flex-col gap-4 border-t border-border pt-4">
                 <LanguageSwitcher />

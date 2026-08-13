@@ -32,6 +32,8 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Field, FieldError, FieldGroup, FieldLabel } from "@/components/ui/field";
+import { Reveal } from "@/components/motion/reveal";
+import { StaggerGroup, StaggerItem } from "@/components/motion/stagger-group";
 import { reservationSchema, type ReservationFormValues } from "@/lib/reservation-schema";
 import { ACCOMMODATIONS, CONTACT, type AccommodationId } from "@/lib/constants";
 import { buildWhatsappUrl } from "@/lib/whatsapp";
@@ -136,170 +138,188 @@ export function ReservationForm({
   return (
     <>
       <form onSubmit={handleSubmit(onSubmitReservation)} className="flex flex-col gap-8">
-        <FieldGroup className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2">
+        <StaggerGroup>
+          <FieldGroup className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2">
+            <StaggerItem>
+              <Field>
+                <FieldLabel htmlFor="name">{t("nameLabel")}</FieldLabel>
+                <Input
+                  id="name"
+                  placeholder={t("namePlaceholder")}
+                  aria-invalid={!!errors.name}
+                  {...register("name")}
+                />
+                {errors.name ? <FieldError>{tErrors("required")}</FieldError> : null}
+              </Field>
+            </StaggerItem>
+
+            <StaggerItem>
+              <Field>
+                <FieldLabel htmlFor="phone">{t("phoneLabel")}</FieldLabel>
+                <Input
+                  id="phone"
+                  type="tel"
+                  placeholder={t("phonePlaceholder")}
+                  aria-invalid={!!errors.phone}
+                  {...register("phone")}
+                />
+                {errors.phone ? <FieldError>{tErrors("required")}</FieldError> : null}
+              </Field>
+            </StaggerItem>
+
+            <StaggerItem>
+              <Field>
+                <FieldLabel htmlFor="email">{t("emailLabel")}</FieldLabel>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder={t("emailPlaceholder")}
+                  aria-invalid={!!errors.email}
+                  {...register("email")}
+                />
+                {errors.email ? <FieldError>{tErrors("invalidEmail")}</FieldError> : null}
+              </Field>
+            </StaggerItem>
+
+            <StaggerItem>
+              <Field>
+                <FieldLabel htmlFor="accommodation">{t("accommodationLabel")}</FieldLabel>
+                <Controller
+                  control={control}
+                  name="accommodation"
+                  render={({ field }) => (
+                    <Select value={field.value} onValueChange={field.onChange}>
+                      <SelectTrigger id="accommodation" className="w-full" aria-invalid={!!errors.accommodation}>
+                        <SelectValue placeholder={t("accommodationPlaceholder")} />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {ACCOMMODATIONS.map((item) => (
+                          <SelectItem key={item.id} value={item.id}>
+                            {tAccommodations(`items.${item.id}.name`)}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  )}
+                />
+                {errors.accommodation ? <FieldError>{tErrors("required")}</FieldError> : null}
+              </Field>
+            </StaggerItem>
+
+            <StaggerItem>
+              <Field>
+                <FieldLabel htmlFor="guests">{t("guestsLabel")}</FieldLabel>
+                <Controller
+                  control={control}
+                  name="guests"
+                  render={({ field }) => (
+                    <Select value={field.value} onValueChange={field.onChange}>
+                      <SelectTrigger id="guests" className="w-full">
+                        <SelectValue placeholder={t("guestsPlaceholder")} />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {guestOptions.map((n) => (
+                          <SelectItem key={n} value={String(n)}>
+                            {t("guestsOption", { count: n })}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  )}
+                />
+              </Field>
+            </StaggerItem>
+
+            <StaggerItem>
+              <Field>
+                <FieldLabel>{t("datesLabel")}</FieldLabel>
+                <Controller
+                  control={control}
+                  name="dateRange"
+                  render={({ field }) => (
+                    <Popover>
+                      <PopoverTrigger asChild>
+                        <Button
+                          type="button"
+                          variant="outline"
+                          aria-invalid={!!errors.dateRange}
+                          className={cn(
+                            "w-full justify-start text-left font-normal",
+                            !field.value?.from && "text-muted-foreground"
+                          )}
+                        >
+                          <CalendarIcon className="size-4" />
+                          {field.value?.from ? (
+                            field.value.to ? (
+                              <>
+                                {format(field.value.from, "PP", { locale: dateFnsLocale })} –{" "}
+                                {format(field.value.to, "PP", { locale: dateFnsLocale })}
+                              </>
+                            ) : (
+                              format(field.value.from, "PP", { locale: dateFnsLocale })
+                            )
+                          ) : (
+                            <span>{t("datesPlaceholder")}</span>
+                          )}
+                        </Button>
+                      </PopoverTrigger>
+                      <PopoverContent className="w-auto p-0" align="start">
+                        <Calendar
+                          mode="range"
+                          selected={field.value as DateRange | undefined}
+                          onSelect={field.onChange}
+                          numberOfMonths={1}
+                          disabled={{ before: new Date() }}
+                          locale={dayPickerLocale}
+                          className="sm:hidden"
+                        />
+                        <Calendar
+                          mode="range"
+                          selected={field.value as DateRange | undefined}
+                          onSelect={field.onChange}
+                          numberOfMonths={2}
+                          disabled={{ before: new Date() }}
+                          locale={dayPickerLocale}
+                          className="hidden sm:block"
+                        />
+                      </PopoverContent>
+                    </Popover>
+                  )}
+                />
+                {errors.dateRange ? <FieldError>{tErrors("invalidDates")}</FieldError> : null}
+              </Field>
+            </StaggerItem>
+          </FieldGroup>
+        </StaggerGroup>
+
+        <Reveal delay={0.1}>
           <Field>
-            <FieldLabel htmlFor="name">{t("nameLabel")}</FieldLabel>
-            <Input
-              id="name"
-              placeholder={t("namePlaceholder")}
-              aria-invalid={!!errors.name}
-              {...register("name")}
-            />
-            {errors.name ? <FieldError>{tErrors("required")}</FieldError> : null}
+            <FieldLabel htmlFor="message">{t("messageLabel")}</FieldLabel>
+            <Textarea id="message" placeholder={t("messagePlaceholder")} rows={4} {...register("message")} />
           </Field>
+        </Reveal>
 
-          <Field>
-            <FieldLabel htmlFor="phone">{t("phoneLabel")}</FieldLabel>
-            <Input
-              id="phone"
-              type="tel"
-              placeholder={t("phonePlaceholder")}
-              aria-invalid={!!errors.phone}
-              {...register("phone")}
-            />
-            {errors.phone ? <FieldError>{tErrors("required")}</FieldError> : null}
-          </Field>
-
-          <Field>
-            <FieldLabel htmlFor="email">{t("emailLabel")}</FieldLabel>
-            <Input
-              id="email"
-              type="email"
-              placeholder={t("emailPlaceholder")}
-              aria-invalid={!!errors.email}
-              {...register("email")}
-            />
-            {errors.email ? <FieldError>{tErrors("invalidEmail")}</FieldError> : null}
-          </Field>
-
-          <Field>
-            <FieldLabel htmlFor="accommodation">{t("accommodationLabel")}</FieldLabel>
-            <Controller
-              control={control}
-              name="accommodation"
-              render={({ field }) => (
-                <Select value={field.value} onValueChange={field.onChange}>
-                  <SelectTrigger id="accommodation" className="w-full" aria-invalid={!!errors.accommodation}>
-                    <SelectValue placeholder={t("accommodationPlaceholder")} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {ACCOMMODATIONS.map((item) => (
-                      <SelectItem key={item.id} value={item.id}>
-                        {tAccommodations(`items.${item.id}.name`)}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              )}
-            />
-            {errors.accommodation ? <FieldError>{tErrors("required")}</FieldError> : null}
-          </Field>
-
-          <Field>
-            <FieldLabel htmlFor="guests">{t("guestsLabel")}</FieldLabel>
-            <Controller
-              control={control}
-              name="guests"
-              render={({ field }) => (
-                <Select value={field.value} onValueChange={field.onChange}>
-                  <SelectTrigger id="guests" className="w-full">
-                    <SelectValue placeholder={t("guestsPlaceholder")} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {guestOptions.map((n) => (
-                      <SelectItem key={n} value={String(n)}>
-                        {t("guestsOption", { count: n })}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              )}
-            />
-          </Field>
-
-          <Field>
-            <FieldLabel>{t("datesLabel")}</FieldLabel>
-            <Controller
-              control={control}
-              name="dateRange"
-              render={({ field }) => (
-                <Popover>
-                  <PopoverTrigger asChild>
-                    <Button
-                      type="button"
-                      variant="outline"
-                      aria-invalid={!!errors.dateRange}
-                      className={cn(
-                        "w-full justify-start text-left font-normal",
-                        !field.value?.from && "text-muted-foreground"
-                      )}
-                    >
-                      <CalendarIcon className="size-4" />
-                      {field.value?.from ? (
-                        field.value.to ? (
-                          <>
-                            {format(field.value.from, "PP", { locale: dateFnsLocale })} –{" "}
-                            {format(field.value.to, "PP", { locale: dateFnsLocale })}
-                          </>
-                        ) : (
-                          format(field.value.from, "PP", { locale: dateFnsLocale })
-                        )
-                      ) : (
-                        <span>{t("datesPlaceholder")}</span>
-                      )}
-                    </Button>
-                  </PopoverTrigger>
-                  <PopoverContent className="w-auto p-0" align="start">
-                    <Calendar
-                      mode="range"
-                      selected={field.value as DateRange | undefined}
-                      onSelect={field.onChange}
-                      numberOfMonths={1}
-                      disabled={{ before: new Date() }}
-                      locale={dayPickerLocale}
-                      className="sm:hidden"
-                    />
-                    <Calendar
-                      mode="range"
-                      selected={field.value as DateRange | undefined}
-                      onSelect={field.onChange}
-                      numberOfMonths={2}
-                      disabled={{ before: new Date() }}
-                      locale={dayPickerLocale}
-                      className="hidden sm:block"
-                    />
-                  </PopoverContent>
-                </Popover>
-              )}
-            />
-            {errors.dateRange ? <FieldError>{tErrors("invalidDates")}</FieldError> : null}
-          </Field>
-        </FieldGroup>
-
-        <Field>
-          <FieldLabel htmlFor="message">{t("messageLabel")}</FieldLabel>
-          <Textarea id="message" placeholder={t("messagePlaceholder")} rows={4} {...register("message")} />
-        </Field>
-
-        <div className="flex flex-col gap-3 sm:flex-row">
-          <Button
-            type="submit"
-            size="lg"
-            disabled={isSubmitting}
-            className="h-12 flex-1 rounded-full text-base"
-          >
-            {isSubmitting ? t("sending") : t("submit")}
-          </Button>
-          <Button
-            type="button"
-            variant="outline"
-            size="lg"
-            className="h-12 flex-1 rounded-full text-base"
-            onClick={handleSubmit(onSubmitWhatsapp)}
-          >
-            {t("whatsappAlt")}
-          </Button>
-        </div>
+        <Reveal delay={0.15} spring>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <Button
+              type="submit"
+              size="lg"
+              disabled={isSubmitting}
+              className="h-12 flex-1 rounded-full text-base"
+            >
+              {isSubmitting ? t("sending") : t("submit")}
+            </Button>
+            <Button
+              type="button"
+              variant="outline"
+              size="lg"
+              className="h-12 flex-1 rounded-full text-base"
+              onClick={handleSubmit(onSubmitWhatsapp)}
+            >
+              {t("whatsappAlt")}
+            </Button>
+          </div>
+        </Reveal>
       </form>
 
       <Dialog open={dialogState !== "idle"} onOpenChange={(open) => !open && setDialogState("idle")}>

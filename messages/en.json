@@ -112,12 +112,14 @@
     "badge": "Testimonials",
     "title": "What our guests say",
     "subtitle": "Real stories from those who have lived the Dona Marta experience.",
-    "placeholderNotice": "Sample testimonials — replace with your guests' real reviews.",
+    "sourceNotice": "Real guest reviews from Airbnb",
     "items": [
-      { "name": "Marina S.", "location": "São Paulo, Brazil", "rating": 5, "text": "Amazing place, super close to the beach and the hosts were very attentive. We'll definitely be back!" },
-      { "name": "Rafael T.", "location": "Curitiba, Brazil", "rating": 5, "text": "Spotless house, everything very clean and organized. The setup for families is excellent." },
-      { "name": "Camila O.", "location": "Porto Alegre, Brazil", "rating": 5, "text": "Wonderful experience, waking up near the sea is priceless. I'd recommend it with my eyes closed." },
-      { "name": "Diego M.", "location": "Florianópolis, Brazil", "rating": 5, "text": "Warm hospitality from start to finish. The inn had everything we needed." }
+      { "name": "Bruna", "location": "Rio Grande do Sul, Brazil", "date": "January 2026", "rating": 5, "text": "Nossa estadia foi excepcional, do início ao fim. O apartamento é exatamente como nas fotos: muito bem cuidado, limpo, organizado, confortável e com tudo o que precisávamos." },
+      { "name": "Betânia", "location": "10 years on Airbnb", "date": "January 2026", "rating": 5, "text": "Local muito próximo da praia, de restaurantes e supermercado." },
+      { "name": "Nadia", "location": "9 years on Airbnb", "date": "January 2023", "rating": 5, "text": "Muito bem localizada. Próximo da praia, restaurantes e mercados. Espaço amplo para estacionamento. Anfitriã sempre disponível para ajudar em qualquer necessidade." },
+      { "name": "Ana Isabel Hoffmann", "location": "7 years on Airbnb", "date": "October 2020", "rating": 5, "text": "Um ótimo lugar, pertinho do mar. Muito bom." },
+      { "name": "Vagner", "location": "11 years on Airbnb", "date": "September 2020", "rating": 5, "text": "Tudo como combinado! Ótimo espaço!" },
+      { "name": "Susiane", "location": "8 years on Airbnb", "date": "November 2018", "rating": 5, "text": "Muito bom, bem localizado e apartamentos muito bons." }
     ]
   },
   "Location": {

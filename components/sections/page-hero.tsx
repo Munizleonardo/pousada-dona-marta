@@ -37,8 +37,6 @@ export function PageHero({
     target: sectionRef,
     offset: ["start start", "end start"],
   });
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-  const contentY = useTransform(scrollYProgress, [0, 1], [0, 90]);
   const imageScale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
 
   return (
@@ -51,7 +49,9 @@ export function PageHero({
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/88 via-black/50 to-black/35" />
       <motion.div
-        style={{ opacity: contentOpacity, y: contentY }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 pb-12 pt-20 sm:px-6 lg:px-8"
       >
         {badge ? (
@@ -65,7 +65,7 @@ export function PageHero({
           </motion.span>
         ) : null}
         <h1 className="font-heading text-4xl font-semibold tracking-tight text-white [text-shadow:0_2px_16px_rgba(0,0,0,0.4)] sm:text-5xl lg:text-6xl">
-          <TextReveal delay={0.1} duration={0.8}>
+          <TextReveal immediate delay={0.1} duration={0.8}>
             {title}
           </TextReveal>
         </h1>

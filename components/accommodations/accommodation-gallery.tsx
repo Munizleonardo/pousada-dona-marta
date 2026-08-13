@@ -40,18 +40,22 @@ export function AccommodationGallery({
       </div>
       <div className="flex gap-3">
         {images.map((item, i) => (
-          <button
+          <motion.button
             key={item.src}
             type="button"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: i === index ? 1 : 0.55, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.15 + i * 0.06, ease: [0.22, 1, 0.36, 1] }}
+            whileHover={{ opacity: 1 }}
             onClick={() => setIndex(i)}
             aria-label={`${alt} ${i + 1}`}
             className={cn(
-              "relative h-16 w-20 shrink-0 overflow-hidden rounded-xl ring-2 ring-transparent transition-all duration-300",
-              i === index ? "ring-primary" : "opacity-55 hover:opacity-100"
+              "relative h-16 w-20 shrink-0 overflow-hidden rounded-xl ring-2 ring-transparent transition-shadow duration-300",
+              i === index && "ring-primary"
             )}
           >
             <Image src={item.src} alt="" fill className="object-cover" sizes="80px" />
-          </button>
+          </motion.button>
         ))}
       </div>
     </div>
