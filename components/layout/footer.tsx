@@ -38,6 +38,9 @@ export async function Footer() {
                 <Link href="/" className="transition-colors hover:text-foreground">
                   {tNav("home")}
                 </Link>
+                <Link href="/sobre" className="transition-colors hover:text-foreground">
+                  {tNav("about")}
+                </Link>
                 <Link href="/acomodacoes" className="transition-colors hover:text-foreground">
                   {tNav("accommodations")}
                 </Link>

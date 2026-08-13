@@ -5,6 +5,7 @@
   },
   "Nav": {
     "home": "Home",
+    "about": "About",
     "accommodations": "Accommodations",
     "location": "Location",
     "contact": "Contact",
@@ -29,14 +30,47 @@
   "About": {
     "badge": "Our story",
     "title": "More than a place to stay",
-    "paragraph1": "Founded with love more than 30 years ago on Pinheira Beach, Pousada Dona Marta is part of the story of this place — and of our own family. Over the years, we've watched guests become friends who return year after year.",
-    "paragraph2": "Today we blend modern comfort with the simplicity of coastal life, warm hospitality and our own organic garden, in a setting designed for families and anyone looking for true rest — just steps from the sea.",
-    "cta": "Talk to us",
+    "paragraph1": "Founded with love more than 30 years ago on Pinheira Beach, Pousada Dona Marta is part of the story of this place and of our own family. Over the years, we've watched guests become friends who return year after year.",
+    "paragraph2": "Today we blend modern comfort with the simplicity of coastal life, warm hospitality and our own organic garden, in a setting designed for families and anyone looking for true rest, just steps from the sea.",
+    "cta": "Discover our story",
     "stats": [
-      { "value": "30+", "label": "years of history" },
-      { "value": "100m", "label": "from the beach" },
-      { "value": "3", "label": "accommodation types" },
-      { "value": "5★", "label": "Airbnb Superhost" }
+      { "value": "9+", "label": "years as Airbnb Superhost" },
+      { "value": "100m", "label": "from Pinheira Beach" },
+      { "value": "98%", "label": "satisfied guests" }
+    ]
+  },
+  "AboutPage": {
+    "heroBadge": "Who we are",
+    "heroTitle": "About Us",
+    "heroSubtitle": "More than 30 years taking care of every detail to welcome you like family.",
+    "historyBadge": "Who we are",
+    "historyTitle": "Our story",
+    "historyParagraph1": "Pousada Dona Marta has been part of the story of Pinheira Beach for more than 30 years. Over that time, it was built through daily work, constant presence and care for every detail, following the growth of the area and welcoming different generations of guests.",
+    "historyParagraph2": "Over the years, many friendships were built. We've welcomed people back at more than one stage of their lives, families who returned because they felt truly welcomed during their stay.",
+    "historyParagraph3": "Today, Pousada Dona Marta carries that same spirit into a new phase, focused on organization, continuous improvement and preserving the values that have always been part of its journey: simplicity, a family atmosphere and responsible hospitality.",
+    "checklist": [
+      "Founded with care and purpose",
+      "A warm, family atmosphere",
+      "Guests who became friends",
+      "A benchmark for hospitality"
+    ],
+    "stats": [
+      { "value": "9+", "label": "years as Airbnb Superhost" },
+      { "value": "100m", "label": "from Pinheira Beach" },
+      { "value": "98%", "label": "satisfied guests" }
+    ],
+    "quote": "For more than 30 years, this inn has been part of our life and our family's routine. We always try to care for every detail with attention, respect and warmth, welcoming guests who often return year after year. Watching the inn grow alongside Pinheira Beach fills us with great pride.",
+    "quoteName": "Lúcia",
+    "quoteRole": "Founder",
+    "purposeBadge": "Our purpose",
+    "purposeTitle": "The Dona Marta way of hosting",
+    "purposeParagraph": "We believe every detail matters. Our mission, vision and values guide everything we do to provide a warm, authentic and unforgettable stay on Pinheira Beach.",
+    "purposeCta": "Book your stay",
+    "superhostBadge": "Airbnb Superhost",
+    "pillars": [
+      { "title": "Mission", "text": "To provide our guests with a warm, safe and unforgettable stay, in harmony with nature." },
+      { "title": "Vision", "text": "To be a benchmark for hospitality in the southern region of Santa Catarina, recognized for human-centered service and respect for the environment." },
+      { "title": "Values", "text": "We act with hospitality, respect, care for the environment and attention to detail, because every guest deserves to feel at home." }
     ]
   },
   "Amenities": {
@@ -81,7 +115,7 @@
       "predio-1": {
         "name": "Building I",
         "tagline": "Views, comfort and versatility",
-        "description": "Building I offers cozy apartments across blocks A and B, with options facing the sea or with a privileged view of the area — easy beach access for couples and families who value convenience.",
+        "description": "Building I offers cozy apartments across blocks A and B, with options facing the sea or with a privileged view of the area, easy beach access for couples and families who value convenience.",
         "capacity": "Up to 2 bedrooms",
         "features": [
           "Privileged view",
@@ -95,7 +129,7 @@
       "predio-2": {
         "name": "Building II",
         "tagline": "Room to enjoy with a group",
-        "description": "Designed for those traveling with family or friends, Building II has up to 3 bedrooms and its own balcony with a barbecue — plenty of room to comfortably host up to 6 people.",
+        "description": "Designed for those traveling with family or friends, Building II has up to 3 bedrooms and its own balcony with a barbecue, plenty of room to comfortably host up to 6 people.",
         "capacity": "Up to 6 guests",
         "features": [
           "Balcony with barbecue",
@@ -130,9 +164,9 @@
     "addressLabel": "Address",
     "directionsCta": "Get directions",
     "places": [
-      { "icon": "waves", "name": "Pinheira Beach", "distance": "100 m", "description": "One of the calmest beaches on the south coast of Santa Catarina, with gentle waters — perfect for families, just steps from the inn." },
-      { "icon": "anchor", "name": "Whale Watching", "distance": "Jul – Nov", "description": "Between July and November you can spot southern right whales in their natural habitat, close to the shore." },
-      { "icon": "sailboat", "name": "Mullet Fishing", "distance": "May – Jul", "description": "The traditional artisanal mullet fishing season brings the community together and delights visitors." },
+      { "icon": "waves", "name": "Pinheira Beach", "distance": "100 m", "description": "One of the calmest beaches on the south coast of Santa Catarina, with gentle waters, perfect for families, just steps from the inn." },
+      { "icon": "anchor", "name": "Whale Watching", "distance": "Jul to Nov", "description": "Between July and November you can spot southern right whales in their natural habitat, close to the shore." },
+      { "icon": "sailboat", "name": "Mullet Fishing", "distance": "May to Jul", "description": "The traditional artisanal mullet fishing season brings the community together and delights visitors." },
       { "icon": "trees", "name": "Nature Trails", "distance": "Nearby", "description": "Trails of different levels through preserved Atlantic Forest, with incredible coastal views." },
       { "icon": "palmtree", "name": "Boat Tours", "distance": "On request", "description": "Explore islands, headlands and bays in the area on tours that reveal a different side of the coast." },
       { "icon": "sunset", "name": "Nightlife", "distance": "In the area", "description": "Bars and restaurants with live music and fresh seafood to end a beach day right." }
@@ -143,17 +177,17 @@
     "title": "Frequently asked questions",
     "subtitle": "Everything you need to know before booking.",
     "items": [
-      { "question": "Do you accept pets?", "answer": "Yes, we accept small pets with advance notice at the time of booking. We just ask for care with the furniture and respect for common areas — any damage is the guest's responsibility." },
+      { "question": "Do you accept pets?", "answer": "Yes, we accept small pets with advance notice at the time of booking. We just ask for care with the furniture and respect for common areas. Any damage is the guest's responsibility." },
       { "question": "What are the check-in and check-out times?", "answer": "Check-in from 2pm and check-out by 11am. Need an early arrival or late departure? Check availability with us before booking." },
       { "question": "Is parking available?", "answer": "Yes. We offer free on-site parking, in a gated area with an electronic gate." },
       { "question": "Do you offer daily housekeeping?", "answer": "We don't offer daily housekeeping during your stay. A full cleaning is done before each guest's arrival." },
-      { "question": "How does the booking and cancellation policy work?", "answer": "Your booking is confirmed with an advance payment, agreed at the time of booking. Late cancellations or no-shows may result in the paid amount being withheld — get in touch to check the conditions before cancelling." }
+      { "question": "How does the booking and cancellation policy work?", "answer": "Your booking is confirmed with an advance payment, agreed at the time of booking. Late cancellations or no-shows may result in the paid amount being withheld. Get in touch to check the conditions before cancelling." }
     ]
   },
   "Reservation": {
     "badge": "Direct booking",
     "title": "Let's plan your stay",
-    "subtitle": "Fill in the details below and send your request — our team will confirm availability and get back to you shortly.",
+    "subtitle": "Fill in the details below and send your request. Our team will confirm availability and get back to you shortly.",
     "form": {
       "nameLabel": "Full name",
       "namePlaceholder": "What should we call you?",
@@ -167,6 +201,7 @@
       "guestsPlaceholder": "Select",
       "datesLabel": "Check-in and check-out",
       "datesPlaceholder": "Select the dates",
+      "datesTo": "to",
       "messageLabel": "Notes",
       "messagePlaceholder": "Tell us a bit more about your trip (optional)",
       "submit": "Send booking request",

@@ -20,6 +20,7 @@ import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
   { href: "/", key: "home" },
+  { href: "/sobre", key: "about" },
   { href: "/acomodacoes", key: "accommodations" },
   { href: "/localizacao", key: "location" },
   { href: "/contato", key: "contact" },

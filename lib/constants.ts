@@ -66,6 +66,8 @@ export const ACCOMMODATIONS: {
 // plenty sharp at that display size.
 export const HERO_IMAGE = "/images/hero/praia-pinheira.webp";
 export const ABOUT_IMAGE = "/images/hero/fachada-pousada.webp";
+export const ABOUT_HERO_IMAGE = "/images/hero/praia-pinheira.webp";
+export const ABOUT_PURPOSE_IMAGE = "/images/hero/trilha-morro.webp";
 export const LOCATION_IMAGE = "/images/hero/enseada.webp";
 export const ACCOMMODATIONS_HERO_IMAGE = "/images/hero/trilha-morro.webp";
 export const LOCATION_HERO_IMAGE = "/images/hero/encontro-mar-rio.webp";

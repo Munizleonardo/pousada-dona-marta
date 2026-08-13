@@ -5,6 +5,7 @@
   },
   "Nav": {
     "home": "Inicio",
+    "about": "Nosotros",
     "accommodations": "Alojamientos",
     "location": "Ubicación",
     "contact": "Contacto",
@@ -29,14 +30,47 @@
   "About": {
     "badge": "Nuestra historia",
     "title": "Más que un lugar para hospedarte",
-    "paragraph1": "Fundada con cariño hace más de 30 años en la Playa da Pinheira, Pousada Dona Marta forma parte de la historia del lugar — y de nuestra propia familia. Con el tiempo, vimos a huéspedes convertirse en amigos que vuelven año tras año.",
+    "paragraph1": "Fundada con cariño hace más de 30 años en la Playa da Pinheira, Pousada Dona Marta forma parte de la historia del lugar y de nuestra propia familia. Con el tiempo, vimos a huéspedes convertirse en amigos que vuelven año tras año.",
     "paragraph2": "Hoy combinamos el confort moderno con la simplicidad de la vida costera, atención cálida y una huerta orgánica propia, en un ambiente pensado para familias y para quienes buscan descansar de verdad, a pocos pasos del mar.",
-    "cta": "Habla con nosotros",
+    "cta": "Conoce nuestra historia",
     "stats": [
-      { "value": "30+", "label": "años de historia" },
-      { "value": "100m", "label": "hasta la playa" },
-      { "value": "3", "label": "tipos de alojamiento" },
-      { "value": "5★", "label": "Superhost de Airbnb" }
+      { "value": "9+", "label": "años como Superhost de Airbnb" },
+      { "value": "100m", "label": "de la Playa da Pinheira" },
+      { "value": "98%", "label": "clientes satisfechos" }
+    ]
+  },
+  "AboutPage": {
+    "heroBadge": "Quiénes somos",
+    "heroTitle": "Sobre nosotros",
+    "heroSubtitle": "Más de 30 años cuidando cada detalle para recibirte como familia.",
+    "historyBadge": "Quiénes somos",
+    "historyTitle": "Nuestra historia",
+    "historyParagraph1": "Pousada Dona Marta forma parte de la historia de la Playa da Pinheira desde hace más de 30 años. Con el tiempo, se construyó con trabajo diario, presencia constante y cuidado con cada detalle, acompañando el crecimiento de la región y recibiendo distintas generaciones de huéspedes.",
+    "historyParagraph2": "A lo largo de los años, se construyeron muchas amistades. Recibimos personas que volvieron en más de una etapa de su vida, familias que regresaron porque se sintieron muy bien acogidas durante su estadía.",
+    "historyParagraph3": "Hoy, Pousada Dona Marta sigue con ese mismo espíritu, entrando en una nueva etapa, enfocada en la organización, las mejoras continuas y la preservación de los valores que siempre formaron parte de su trayectoria: sencillez, ambiente familiar y atención responsable.",
+    "checklist": [
+      "Fundada con cariño y propósito",
+      "Ambiente familiar y acogedor",
+      "Huéspedes que se volvieron amigos",
+      "Referencia de hospitalidad"
+    ],
+    "stats": [
+      { "value": "9+", "label": "años como Superhost de Airbnb" },
+      { "value": "100m", "label": "de la Playa da Pinheira" },
+      { "value": "98%", "label": "clientes satisfechos" }
+    ],
+    "quote": "Desde hace más de 30 años, la posada forma parte de nuestra vida y de la rutina de nuestra familia. Siempre buscamos cuidar cada detalle con atención, respeto y cariño, recibiendo huéspedes que muchas veces regresan año tras año. Ver a la posada crecer junto con la Playa da Pinheira es motivo de mucho orgullo.",
+    "quoteName": "Lúcia",
+    "quoteRole": "Fundadora",
+    "purposeBadge": "Nuestro propósito",
+    "purposeTitle": "La forma Dona Marta de recibir",
+    "purposeParagraph": "Creemos que cada detalle importa. Nuestra misión, visión y valores guían todo lo que hacemos para ofrecer una estadía acogedora, auténtica e inolvidable en la Playa da Pinheira.",
+    "purposeCta": "Haz tu reserva",
+    "superhostBadge": "Superhost de Airbnb",
+    "pillars": [
+      { "title": "Misión", "text": "Ofrecer a nuestros huéspedes una estadía acogedora, segura e inolvidable, en armonía con la naturaleza." },
+      { "title": "Visión", "text": "Ser referencia en hospitalidad en la región sur de Santa Catarina, reconocida por la atención humana y el respeto al medio ambiente." },
+      { "title": "Valores", "text": "Actuamos con hospitalidad, respeto, cuidado del medio ambiente y atención a los detalles, porque cada huésped merece sentirse en casa." }
     ]
   },
   "Amenities": {
@@ -81,7 +115,7 @@
       "predio-1": {
         "name": "Edificio I",
         "tagline": "Vistas, confort y versatilidad",
-        "description": "El Edificio I reúne apartamentos acogedores en los bloques A y B, con opciones frente al mar o con vista privilegiada de la región — fácil acceso a la playa para parejas y familias que valoran la practicidad.",
+        "description": "El Edificio I reúne apartamentos acogedores en los bloques A y B, con opciones frente al mar o con vista privilegiada de la región, fácil acceso a la playa para parejas y familias que valoran la practicidad.",
         "capacity": "Hasta 2 habitaciones",
         "features": [
           "Vista privilegiada",
@@ -95,7 +129,7 @@
       "predio-2": {
         "name": "Edificio II",
         "tagline": "Espacio para disfrutar en grupo",
-        "description": "Pensado para quienes viajan en familia o con amigos, el Edificio II tiene hasta 3 habitaciones y balcón con parrilla propia — espacio de sobra para hasta 6 personas con comodidad.",
+        "description": "Pensado para quienes viajan en familia o con amigos, el Edificio II tiene hasta 3 habitaciones y balcón con parrilla propia, espacio de sobra para hasta 6 personas con comodidad.",
         "capacity": "Hasta 6 huéspedes",
         "features": [
           "Balcón con parrilla",
@@ -130,9 +164,9 @@
     "addressLabel": "Dirección",
     "directionsCta": "Cómo llegar",
     "places": [
-      { "icon": "waves", "name": "Playa da Pinheira", "distance": "100 m", "description": "Una de las playas más tranquilas del litoral sur de SC, con aguas calmas — perfecta para familias, a pocos pasos de la posada." },
-      { "icon": "anchor", "name": "Avistamiento de Ballenas", "distance": "Jul – Nov", "description": "Entre julio y noviembre es posible avistar ballenas francas en su hábitat natural, muy cerca de la costa." },
-      { "icon": "sailboat", "name": "Pesca de la Lisa", "distance": "May – Jul", "description": "La tradicional pesca artesanal de la lisa moviliza a la comunidad y encanta a los visitantes en estos meses." },
+      { "icon": "waves", "name": "Playa da Pinheira", "distance": "100 m", "description": "Una de las playas más tranquilas del litoral sur de SC, con aguas calmas, perfecta para familias, a pocos pasos de la posada." },
+      { "icon": "anchor", "name": "Avistamiento de Ballenas", "distance": "Jul a Nov", "description": "Entre julio y noviembre es posible avistar ballenas francas en su hábitat natural, muy cerca de la costa." },
+      { "icon": "sailboat", "name": "Pesca de la Lisa", "distance": "May a Jul", "description": "La tradicional pesca artesanal de la lisa moviliza a la comunidad y encanta a los visitantes en estos meses." },
       { "icon": "trees", "name": "Senderos Ecológicos", "distance": "En las cercanías", "description": "Senderos de distintos niveles en medio de la Mata Atlántica preservada, con vistas increíbles del litoral." },
       { "icon": "palmtree", "name": "Paseos en Barco", "distance": "A consultar", "description": "Explora islas, puntas rocosas y bahías de la región en paseos que revelan otra perspectiva del litoral." },
       { "icon": "sunset", "name": "Vida Nocturna", "distance": "En la región", "description": "Bares y restaurantes con música en vivo y mariscos frescos para cerrar bien el día de playa." }
@@ -143,17 +177,17 @@
     "title": "Preguntas frecuentes",
     "subtitle": "Todo lo que necesitas saber antes de reservar.",
     "items": [
-      { "question": "¿Aceptan mascotas?", "answer": "Sí, aceptamos mascotas pequeñas con aviso previo al momento de la reserva. Solo pedimos cuidado con los muebles y respeto por las áreas comunes — los daños son responsabilidad del huésped." },
+      { "question": "¿Aceptan mascotas?", "answer": "Sí, aceptamos mascotas pequeñas con aviso previo al momento de la reserva. Solo pedimos cuidado con los muebles y respeto por las áreas comunes. Los daños son responsabilidad del huésped." },
       { "question": "¿Cuál es el horario de check-in y check-out?", "answer": "Check-in desde las 14h y check-out hasta las 11h. ¿Necesitas entrada anticipada o salida tardía? Consulta la disponibilidad con nosotros antes de reservar." },
       { "question": "¿Hay estacionamiento disponible?", "answer": "Sí. Ofrecemos estacionamiento gratuito en el lugar, en área interna y con portón eléctrico." },
       { "question": "¿Ofrecen limpieza diaria?", "answer": "No realizamos limpieza diaria durante la estadía. La limpieza completa se hace antes de la llegada de cada huésped." },
-      { "question": "¿Cómo funciona la política de reservas y cancelación?", "answer": "La reserva se confirma con un pago anticipado, acordado al momento de reservar. Cancelaciones fuera de plazo o no presentarse pueden resultar en la retención del monto pagado — contáctanos para verificar las condiciones antes de cancelar." }
+      { "question": "¿Cómo funciona la política de reservas y cancelación?", "answer": "La reserva se confirma con un pago anticipado, acordado al momento de reservar. Cancelaciones fuera de plazo o no presentarse pueden resultar en la retención del monto pagado. Contáctanos para verificar las condiciones antes de cancelar." }
     ]
   },
   "Reservation": {
     "badge": "Reserva directa",
     "title": "Planifiquemos tu estadía",
-    "subtitle": "Completa los datos a continuación y envía tu solicitud — nuestro equipo confirmará la disponibilidad y te responderá pronto.",
+    "subtitle": "Completa los datos a continuación y envía tu solicitud. Nuestro equipo confirmará la disponibilidad y te responderá pronto.",
     "form": {
       "nameLabel": "Nombre completo",
       "namePlaceholder": "¿Cómo podemos llamarte?",
@@ -167,6 +201,7 @@
       "guestsPlaceholder": "Selecciona",
       "datesLabel": "Check-in y check-out",
       "datesPlaceholder": "Selecciona las fechas",
+      "datesTo": "al",
       "messageLabel": "Observaciones",
       "messagePlaceholder": "Cuéntanos un poco más sobre tu viaje (opcional)",
       "submit": "Enviar solicitud de reserva",

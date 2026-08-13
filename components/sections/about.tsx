@@ -60,7 +60,7 @@ export function About() {
 
         <Reveal delay={0.2 + stats.length * 0.08}>
           <Button asChild size="lg" className="mt-2 w-fit rounded-full px-7">
-            <Link href="/contato">{t("cta")}</Link>
+            <Link href="/sobre">{t("cta")}</Link>
           </Button>
         </Reveal>
       </div>

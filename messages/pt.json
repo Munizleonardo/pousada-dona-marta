@@ -5,6 +5,7 @@
   },
   "Nav": {
     "home": "Início",
+    "about": "Sobre",
     "accommodations": "Acomodações",
     "location": "Localização",
     "contact": "Contato",
@@ -29,14 +30,47 @@
   "About": {
     "badge": "Nossa história",
     "title": "Mais do que hospedagem",
-    "paragraph1": "Fundada com carinho há mais de 30 anos na Praia da Pinheira, a Pousada Dona Marta faz parte da história do lugar — e da nossa própria família. Ao longo desse tempo, vimos hóspedes virarem amigos e voltarem ano após ano.",
-    "paragraph2": "Hoje unimos o conforto moderno à simplicidade da vida litorânea, com atendimento acolhedor e uma horta orgânica própria, em um ambiente pensado para famílias e para quem busca descanso de verdade — a poucos passos do mar.",
-    "cta": "Fale com a gente",
+    "paragraph1": "Fundada com carinho há mais de 30 anos na Praia da Pinheira, a Pousada Dona Marta faz parte da história do lugar e da nossa própria família. Ao longo desse tempo, vimos hóspedes virarem amigos e voltarem ano após ano.",
+    "paragraph2": "Hoje unimos o conforto moderno à simplicidade da vida litorânea, com atendimento acolhedor e uma horta orgânica própria, em um ambiente pensado para famílias e para quem busca descanso de verdade, a poucos passos do mar.",
+    "cta": "Conheça nossa história",
     "stats": [
-      { "value": "30+", "label": "anos de história" },
-      { "value": "100m", "label": "até a praia" },
-      { "value": "3", "label": "tipos de acomodação" },
-      { "value": "5★", "label": "Superhost Airbnb" }
+      { "value": "9+", "label": "anos em Superhost no Airbnb" },
+      { "value": "100m", "label": "da Praia da Pinheira" },
+      { "value": "98%", "label": "clientes satisfeitos" }
+    ]
+  },
+  "AboutPage": {
+    "heroBadge": "Quem somos",
+    "heroTitle": "Sobre nós",
+    "heroSubtitle": "Mais de 30 anos cuidando de cada detalhe para receber você como família.",
+    "historyBadge": "Quem somos",
+    "historyTitle": "Nossa história",
+    "historyParagraph1": "A Pousada Dona Marta faz parte da história da Praia da Pinheira há mais de 30 anos. Ao longo desse tempo, foi construída com trabalho diário, presença constante e cuidado com cada detalhe, acompanhando o crescimento da região e recebendo diferentes gerações de hóspedes.",
+    "historyParagraph2": "Ao longo dos anos, foram construídas muitas amizades. Recebemos pessoas que voltaram em mais de uma fase da vida, famílias que retornaram porque se sentiram bem acolhidas durante a estadia.",
+    "historyParagraph3": "Hoje, a Pousada Dona Marta segue exatamente com esse espírito, entrando em uma nova fase, com foco na organização, melhorias contínuas e na preservação dos valores que sempre fizeram parte da sua trajetória: simplicidade, ambiente familiar e atendimento responsável.",
+    "checklist": [
+      "Fundada com carinho e propósito",
+      "Ambiente familiar e acolhedor",
+      "Hóspedes que viram amigos",
+      "Referência de hospitalidade"
+    ],
+    "stats": [
+      { "value": "9+", "label": "anos em Superhost no Airbnb" },
+      { "value": "100m", "label": "da Praia da Pinheira" },
+      { "value": "98%", "label": "clientes satisfeitos" }
+    ],
+    "quote": "Ao longo de mais de 30 anos, a pousada faz parte da nossa vida e da rotina da nossa família. Sempre buscamos cuidar de cada detalhe com atenção, respeito e carinho, recebendo hóspedes que muitas vezes voltam ano após ano. Ver a pousada crescer junto com a Praia da Pinheira é motivo de muito orgulho.",
+    "quoteName": "Lúcia",
+    "quoteRole": "Fundadora",
+    "purposeBadge": "Nosso propósito",
+    "purposeTitle": "O jeito Dona Marta de receber",
+    "purposeParagraph": "Acreditamos que cada detalhe importa. Nossa missão, visão e valores guiam tudo o que fazemos para proporcionar uma estadia acolhedora, autêntica e inesquecível na Praia da Pinheira.",
+    "purposeCta": "Faça sua reserva",
+    "superhostBadge": "Superhost Airbnb",
+    "pillars": [
+      { "title": "Missão", "text": "Proporcionar aos nossos hóspedes uma estadia acolhedora, segura e inesquecível, em harmonia com a natureza." },
+      { "title": "Visão", "text": "Ser referência em hospitalidade na região sul de Santa Catarina, reconhecida pelo atendimento humano e pelo respeito ao meio ambiente." },
+      { "title": "Valores", "text": "Agimos com hospitalidade, respeito, cuidado com o meio ambiente e atenção aos detalhes, porque cada hóspede merece se sentir em casa." }
     ]
   },
   "Amenities": {
@@ -81,7 +115,7 @@
       "predio-1": {
         "name": "Prédio I",
         "tagline": "Vista, conforto e versatilidade",
-        "description": "O Prédio I reúne apartamentos aconchegantes nos blocos A e B, com opções de frente para o mar ou com vista privilegiada da região — fácil acesso à praia para casais e famílias que valorizam praticidade.",
+        "description": "O Prédio I reúne apartamentos aconchegantes nos blocos A e B, com opções de frente para o mar ou com vista privilegiada da região, fácil acesso à praia para casais e famílias que valorizam praticidade.",
         "capacity": "Até 2 quartos",
         "features": [
           "Vista privilegiada",
@@ -95,7 +129,7 @@
       "predio-2": {
         "name": "Prédio II",
         "tagline": "Espaço para curtir em grupo",
-        "description": "Pensado para quem viaja em família ou com amigos, o Prédio II tem até 3 quartos e sacada com churrasqueira própria — espaço de sobra para acomodar até 6 pessoas com conforto.",
+        "description": "Pensado para quem viaja em família ou com amigos, o Prédio II tem até 3 quartos e sacada com churrasqueira própria, espaço de sobra para acomodar até 6 pessoas com conforto.",
         "capacity": "Até 6 hóspedes",
         "features": [
           "Sacada com churrasqueira",
@@ -130,9 +164,9 @@
     "addressLabel": "Endereço",
     "directionsCta": "Como chegar",
     "places": [
-      { "icon": "waves", "name": "Praia da Pinheira", "distance": "100 m", "description": "Uma das praias mais tranquilas do litoral sul de SC, com águas calmas — perfeita para famílias, a poucos passos da pousada." },
-      { "icon": "anchor", "name": "Observação de Baleias", "distance": "Jul – Nov", "description": "Entre julho e novembro é possível avistar baleias-francas em seu habitat natural, bem perto da costa." },
-      { "icon": "sailboat", "name": "Pesca da Tainha", "distance": "Mai – Jul", "description": "A tradicional pesca artesanal da tainha movimenta a comunidade e encanta visitantes nesses meses." },
+      { "icon": "waves", "name": "Praia da Pinheira", "distance": "100 m", "description": "Uma das praias mais tranquilas do litoral sul de SC, com águas calmas, perfeita para famílias, a poucos passos da pousada." },
+      { "icon": "anchor", "name": "Observação de Baleias", "distance": "Jul a Nov", "description": "Entre julho e novembro é possível avistar baleias-francas em seu habitat natural, bem perto da costa." },
+      { "icon": "sailboat", "name": "Pesca da Tainha", "distance": "Mai a Jul", "description": "A tradicional pesca artesanal da tainha movimenta a comunidade e encanta visitantes nesses meses." },
       { "icon": "trees", "name": "Trilhas Ecológicas", "distance": "Nas proximidades", "description": "Trilhas de diferentes níveis em meio à Mata Atlântica preservada, com vistas incríveis do litoral." },
       { "icon": "palmtree", "name": "Passeios de Barco", "distance": "Sob consulta", "description": "Explore ilhas, costões e baías da região em passeios que revelam outra perspectiva do litoral." },
       { "icon": "sunset", "name": "Vida Noturna", "distance": "Na região", "description": "Bares e restaurantes com música ao vivo e frutos do mar frescos para fechar bem o dia de praia." }
@@ -143,17 +177,17 @@
     "title": "Perguntas frequentes",
     "subtitle": "Tudo o que você precisa saber antes de reservar.",
     "items": [
-      { "question": "Vocês aceitam animais de estimação?", "answer": "Sim, aceitamos animais de pequeno porte mediante aviso prévio no momento da reserva. Pedimos apenas cuidado com os móveis e respeito às áreas comuns — eventuais danos são de responsabilidade do hóspede." },
+      { "question": "Vocês aceitam animais de estimação?", "answer": "Sim, aceitamos animais de pequeno porte mediante aviso prévio no momento da reserva. Pedimos apenas cuidado com os móveis e respeito às áreas comuns. Eventuais danos são de responsabilidade do hóspede." },
       { "question": "Qual o horário de check-in e check-out?", "answer": "Check-in a partir das 14h e check-out até às 11h. Precisa de entrada antecipada ou saída tardia? Consulte a disponibilidade com a gente antes de reservar." },
       { "question": "Há estacionamento disponível?", "answer": "Sim. Oferecemos estacionamento gratuito no local, em área interna e com portão eletrônico, para maior segurança." },
       { "question": "Vocês oferecem serviço de limpeza diário?", "answer": "Não fazemos limpeza diária durante a estadia. A limpeza completa é realizada antes da entrada de cada hóspede." },
-      { "question": "Como funciona a política de reservas e cancelamento?", "answer": "A reserva é confirmada mediante pagamento antecipado, combinado no momento da reserva. Cancelamentos fora do prazo ou não comparecimento podem resultar na retenção do valor pago — fale com a gente para verificar as condições antes de cancelar." }
+      { "question": "Como funciona a política de reservas e cancelamento?", "answer": "A reserva é confirmada mediante pagamento antecipado, combinado no momento da reserva. Cancelamentos fora do prazo ou não comparecimento podem resultar na retenção do valor pago. Fale com a gente para verificar as condições antes de cancelar." }
     ]
   },
   "Reservation": {
     "badge": "Reserva direta",
     "title": "Vamos planejar sua estadia",
-    "subtitle": "Preencha os dados abaixo e envie sua solicitação — nossa equipe confirma a disponibilidade e retorna rapidinho.",
+    "subtitle": "Preencha os dados abaixo e envie sua solicitação. Nossa equipe confirma a disponibilidade e retorna rapidinho.",
     "form": {
       "nameLabel": "Nome completo",
       "namePlaceholder": "Como podemos te chamar?",
@@ -167,6 +201,7 @@
       "guestsPlaceholder": "Selecione",
       "datesLabel": "Check-in e check-out",
       "datesPlaceholder": "Selecione as datas",
+      "datesTo": "a",
       "messageLabel": "Observações",
       "messagePlaceholder": "Conte um pouco mais sobre a sua viagem (opcional)",
       "submit": "Enviar solicitação de reserva",

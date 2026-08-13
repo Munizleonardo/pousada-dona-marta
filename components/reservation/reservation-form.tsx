@@ -252,7 +252,7 @@ export function ReservationForm({
                           {field.value?.from ? (
                             field.value.to ? (
                               <>
-                                {format(field.value.from, "PP", { locale: dateFnsLocale })} –{" "}
+                                {format(field.value.from, "PP", { locale: dateFnsLocale })} {t("datesTo")}{" "}
                                 {format(field.value.to, "PP", { locale: dateFnsLocale })}
                               </>
                             ) : (

@@ -58,7 +58,7 @@ export async function submitReservation(
       from: `"Site Pousada Dona Marta" <${gmailUser}>`,
       to: gmailUser,
       replyTo: data.email || undefined,
-      subject: `Nova solicitação de reserva — ${data.name}`,
+      subject: `Nova solicitação de reserva de ${data.name}`,
       text: fields.map(([label, value]) => `${label}: ${value}`).join("\n"),
       html: `
         <div style="font-family: -apple-system, Segoe UI, sans-serif; font-size: 15px; color: #222;">
@@ -80,7 +80,7 @@ export async function submitReservation(
         await transporter.sendMail({
           from: `"Pousada Dona Marta" <${gmailUser}>`,
           to: data.email,
-          subject: "Recebemos sua solicitação — Pousada Dona Marta",
+          subject: "Recebemos sua solicitação na Pousada Dona Marta",
           text: `Olá, ${data.name}!\n\nRecebemos sua solicitação de reserva na Pousada Dona Marta e em breve nossa equipe vai confirmar a disponibilidade com você.\n\nSe preferir uma resposta mais rápida, fale com a gente pelo WhatsApp: https://wa.me/${WHATSAPP_NUMBER}\n\nAté breve!\nPousada Dona Marta`,
         });
       } catch (courtesyError) {
