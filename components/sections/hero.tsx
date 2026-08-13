@@ -23,7 +23,7 @@ export function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="relative flex h-[95svh] min-h-[640px] w-full items-end overflow-hidden bg-neutral-900"
+      className="relative flex h-[95svh] min-h-[640px] w-full items-center overflow-hidden bg-neutral-900"
     >
       <motion.div
         initial={{ scale: 1.28, filter: "brightness(0.55) saturate(0.7)" }}
@@ -44,7 +44,7 @@ export function Hero() {
 
       <motion.div
         style={{ opacity: contentOpacity, y: contentY }}
-        className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-7 px-4 pb-20 pt-40 sm:px-6 lg:px-8"
+        className="relative z-10 mx-auto flex w-full max-w-7xl flex-col gap-7 px-4 pb-16 pt-24 sm:px-6 lg:px-8"
       >
         <motion.div
           initial={{ opacity: 0, y: 20 }}

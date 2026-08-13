@@ -15,12 +15,12 @@ const TONES = [
 
 const SIZE_CLASSES = {
   sm: "size-12",
-  md: "size-16",
+  md: "size-12 sm:size-16",
 } as const;
 
 const ICON_SIZE_CLASSES = {
   sm: "size-6",
-  md: "size-7",
+  md: "size-6 sm:size-7",
 } as const;
 
 export function FeatureIcon({

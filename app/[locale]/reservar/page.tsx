@@ -15,6 +15,7 @@ export default async function ReservationPage({
   const { acomodacao } = await searchParams;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Reservation" });
+  const tHero = await getTranslations({ locale, namespace: "Hero" });
 
   const defaultAccommodation = ACCOMMODATIONS.some((item) => item.id === acomodacao)
     ? (acomodacao as AccommodationId)
@@ -28,6 +29,10 @@ export default async function ReservationPage({
         badge={t("badge")}
         title={t("title")}
         subtitle={t("subtitle")}
+        meta={[
+          { icon: "star", label: tHero("superhostBadge") },
+          { icon: "mapPin", label: tHero("distanceBadge") },
+        ]}
       />
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 py-24 sm:px-6 lg:grid-cols-[1.4fr_1fr] lg:px-8 lg:py-32">

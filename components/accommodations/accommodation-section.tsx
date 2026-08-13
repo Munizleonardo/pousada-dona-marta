@@ -33,11 +33,11 @@ export function AccommodationSection({
         reversed && "lg:flex-row-reverse"
       )}
     >
-      <DepthReveal className="w-full lg:w-1/2">
+      <DepthReveal className="-mx-4 sm:-mx-6 lg:mx-0 lg:w-3/5">
         <AccommodationGallery images={item.gallery} alt={t(`items.${item.id}.name`)} />
       </DepthReveal>
 
-      <div className="flex w-full flex-col gap-5 lg:w-1/2">
+      <div className="flex w-full flex-col gap-5 lg:w-2/5">
         <Reveal className="flex items-center gap-3">
           {Icon ? <IconBadge icon={Icon} size="sm" /> : null}
           <Badge variant="secondary">{t(`items.${item.id}.capacity`)}</Badge>

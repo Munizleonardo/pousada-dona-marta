@@ -19,7 +19,7 @@ export function Faq() {
   const items = t.raw("items") as FaqItem[];
 
   return (
-    <section className="py-24 lg:py-32">
+    <section id="duvidas" className="scroll-mt-24 py-24 lg:py-32">
       <div className="mx-auto flex max-w-3xl flex-col gap-10 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-xl flex-col items-center gap-4 text-center">
           <SectionEyebrow>{t("badge")}</SectionEyebrow>

@@ -71,3 +71,4 @@ export const ACCOMMODATIONS_HERO_IMAGE = "/images/hero/trilha-morro.webp";
 export const LOCATION_HERO_IMAGE = "/images/hero/encontro-mar-rio.webp";
 export const RESERVATION_HERO_IMAGE = "/images/hero/praia-pinheira.webp";
 export const CONTACT_HERO_IMAGE = "/images/hero/encontro-mar-rio.webp";
+export const AMENITIES_IMAGE = "/images/region/enseada-vista.webp";

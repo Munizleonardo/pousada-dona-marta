@@ -29,6 +29,10 @@ export default async function ContactPage({
         badge={t("badge")}
         title={t("title")}
         subtitle={t("subtitle")}
+        meta={[
+          { icon: "phone", label: CONTACT.phones[0].display },
+          { icon: "mail", label: CONTACT.email },
+        ]}
       />
 
       <div className="mx-auto flex max-w-7xl flex-col gap-16 px-4 py-24 sm:px-6 lg:px-8 lg:py-32">

@@ -1,13 +1,14 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { ICON_MAP } from "@/components/icon-map";
+import { Check } from "lucide-react";
 import { Reveal } from "@/components/motion/reveal";
 import { TextReveal } from "@/components/motion/text-reveal";
 import { SectionEyebrow } from "@/components/motion/section-eyebrow";
 import { StaggerGroup, StaggerItem } from "@/components/motion/stagger-group";
-import { TiltCard } from "@/components/motion/tilt-card";
-import { FeatureIcon } from "@/components/motion/feature-icon";
+import { DepthReveal } from "@/components/motion/depth-reveal";
+import { ParallaxScene } from "@/components/motion/parallax-scene";
+import { AMENITIES_IMAGE } from "@/lib/constants";
 
 type AmenityItem = { icon: string; title: string; description: string };
 
@@ -28,27 +29,32 @@ export function Amenities() {
           </Reveal>
         </div>
 
-        <StaggerGroup className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((item, index) => {
-            const Icon = ICON_MAP[item.icon];
-            return (
-              <StaggerItem key={item.title} depth>
-                <TiltCard
-                  max={6}
-                  className="flex h-full flex-col gap-4 rounded-2xl border border-border bg-background p-6 transition-shadow duration-300 hover:shadow-xl"
-                >
-                  {Icon ? <FeatureIcon icon={Icon} index={index} /> : null}
-                  <div className="flex flex-col gap-1.5">
-                    <h3 className="font-heading text-lg font-semibold">{item.title}</h3>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
+        <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
+          <DepthReveal className="relative -mx-4 aspect-[4/3] overflow-hidden rounded-none sm:-mx-6 lg:mx-0 lg:w-3/5 lg:rounded-3xl">
+            <ParallaxScene
+              src={AMENITIES_IMAGE}
+              alt="Vista da Enseada da Pinheira ao redor da pousada"
+              className="absolute inset-0 h-full w-full"
+              kenBurns
+            />
+          </DepthReveal>
+
+          <StaggerGroup className="grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-2 lg:w-2/5">
+            {items.map((item) => (
+              <StaggerItem key={item.title}>
+                <div className="flex items-start gap-3">
+                  <Check className="mt-0.5 size-4 shrink-0 text-primary" />
+                  <div className="flex flex-col gap-0.5">
+                    <span className="text-sm font-semibold">{item.title}</span>
+                    <span className="text-sm leading-relaxed text-muted-foreground">
                       {item.description}
-                    </p>
+                    </span>
                   </div>
-                </TiltCard>
+                </div>
               </StaggerItem>
-            );
-          })}
-        </StaggerGroup>
+            ))}
+          </StaggerGroup>
+        </div>
       </div>
     </section>
   );

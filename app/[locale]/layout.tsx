@@ -9,6 +9,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { WhatsappFloat } from "@/components/layout/whatsapp-float";
+import { FaqFloat } from "@/components/layout/faq-float";
 import { PageTransition } from "@/components/motion/page-transition";
 import { ScrollProgress } from "@/components/motion/scroll-progress";
 import "../globals.css";
@@ -80,6 +81,7 @@ export default async function LocaleLayout({
             </main>
             <Footer />
             <WhatsappFloat />
+            <FaqFloat />
             <Toaster />
           </TooltipProvider>
         </NextIntlClientProvider>

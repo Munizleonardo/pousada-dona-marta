@@ -17,7 +17,7 @@ export function AccommodationGallery({
 
   return (
     <div className="flex flex-col gap-3">
-      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl bg-muted">
+      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-none bg-muted lg:rounded-3xl">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
@@ -33,7 +33,7 @@ export function AccommodationGallery({
               fill
               quality={90}
               className="object-cover"
-              sizes="(min-width: 1024px) 50vw, 100vw"
+              sizes="(min-width: 1024px) 60vw, 100vw"
             />
           </motion.div>
         </AnimatePresence>

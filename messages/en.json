@@ -8,6 +8,7 @@
     "accommodations": "Accommodations",
     "location": "Location",
     "contact": "Contact",
+    "faq": "FAQ",
     "bookNow": "Book Now",
     "languageLabel": "Language",
     "menuLabel": "Menu",
@@ -58,6 +59,7 @@
     "badge": "Where to stay",
     "title": "Choose the perfect accommodation",
     "subtitle": "Three different ways to experience Pousada Dona Marta, all just steps from the sea.",
+    "pageHeroCount": "{count} accommodation options",
     "cta": "View details",
     "reserveCta": "Book this accommodation",
     "featuresTitle": "What's included",
@@ -122,6 +124,7 @@
     "badge": "Where we are",
     "title": "The tranquility of Enseada da Pinheira",
     "subtitle": "Beach, nature and tours just minutes from the inn's front door.",
+    "pageHeroCount": "{count} nearby attractions",
     "addressLabel": "Address",
     "directionsCta": "Get directions",
     "places": [
@@ -223,7 +226,8 @@
     "contactTitle": "Contact",
     "followTitle": "Follow us",
     "rights": "All rights reserved.",
-    "madeWith": "Made with care in Enseada da Pinheira."
+    "madeWith": "Made with care in Enseada da Pinheira.",
+    "developedBy": "Developed by"
   },
   "Common": {
     "readMore": "Learn more",

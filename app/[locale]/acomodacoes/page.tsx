@@ -1,7 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { PageHero } from "@/components/sections/page-hero";
 import { AccommodationSection } from "@/components/accommodations/accommodation-section";
-import { Amenities } from "@/components/sections/amenities";
 import { Faq } from "@/components/sections/faq";
 import { CtaBand } from "@/components/sections/cta-band";
 import { Separator } from "@/components/ui/separator";
@@ -15,6 +14,7 @@ export default async function AccommodationsPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Accommodations" });
+  const tHero = await getTranslations({ locale, namespace: "Hero" });
 
   return (
     <>
@@ -24,6 +24,10 @@ export default async function AccommodationsPage({
         badge={t("badge")}
         title={t("title")}
         subtitle={t("subtitle")}
+        meta={[
+          { icon: "home", label: t("pageHeroCount", { count: ACCOMMODATIONS.length }) },
+          { icon: "star", label: tHero("superhostBadge") },
+        ]}
       />
 
       <div className="mx-auto flex max-w-7xl flex-col gap-20 px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
@@ -35,7 +39,6 @@ export default async function AccommodationsPage({
         ))}
       </div>
 
-      <Amenities />
       <Faq />
       <CtaBand />
     </>

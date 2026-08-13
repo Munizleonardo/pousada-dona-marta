@@ -19,7 +19,7 @@ export function About() {
 
   return (
     <section className="mx-auto flex max-w-7xl flex-col gap-14 px-4 py-24 sm:px-6 lg:flex-row lg:items-center lg:gap-20 lg:px-8 lg:py-32">
-      <DepthReveal className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl shadow-2xl shadow-black/10 lg:w-1/2">
+      <DepthReveal className="relative -mx-4 aspect-[4/5] overflow-hidden rounded-none shadow-2xl shadow-black/10 sm:-mx-6 lg:mx-0 lg:w-3/5 lg:rounded-3xl">
         <ParallaxScene
           src={ABOUT_IMAGE}
           alt="Fachada da Pousada Dona Marta"
@@ -28,7 +28,7 @@ export function About() {
         />
       </DepthReveal>
 
-      <div className="flex flex-col gap-6 lg:w-1/2">
+      <div className="flex flex-col gap-6 lg:w-2/5">
         <SectionEyebrow>{t("badge")}</SectionEyebrow>
         <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
           <TextReveal>{t("title")}</TextReveal>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { InstagramIcon } from "@/components/icons/instagram-icon";
+import { LogoParks } from "@/components/icons/logo-parks";
 import { CONTACT } from "@/lib/constants";
 
 export async function Footer() {
@@ -91,6 +92,18 @@ export async function Footer() {
             © {year} Pousada Dona Marta. {t("rights")}
           </span>
           <span>{t("madeWith")}</span>
+        </div>
+
+        <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground">
+          <span>{t("developedBy")}</span>
+          <a
+            href="https://parkscompany.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            <LogoParks className="h-3.5 w-auto" />
+          </a>
         </div>
       </div>
     </footer>

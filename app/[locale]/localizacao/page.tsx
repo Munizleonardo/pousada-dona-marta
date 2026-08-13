@@ -16,6 +16,7 @@ export default async function LocationPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Location" });
+  const tHero = await getTranslations({ locale, namespace: "Hero" });
   const places = t.raw("places") as Place[];
 
   return (
@@ -26,6 +27,10 @@ export default async function LocationPage({
         badge={t("badge")}
         title={t("title")}
         subtitle={t("subtitle")}
+        meta={[
+          { icon: "mapPin", label: tHero("distanceBadge") },
+          { icon: "compass", label: t("pageHeroCount", { count: places.length }) },
+        ]}
       />
 
       <div className="mx-auto flex max-w-7xl flex-col gap-16 px-4 py-24 sm:px-6 lg:px-8 lg:py-32">

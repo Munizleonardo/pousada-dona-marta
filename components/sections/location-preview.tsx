@@ -16,7 +16,7 @@ export function LocationPreview() {
 
   return (
     <section className="mx-auto flex max-w-7xl flex-col gap-14 px-4 py-24 sm:px-6 lg:flex-row-reverse lg:items-center lg:gap-20 lg:px-8 lg:py-32">
-      <DepthReveal className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl lg:w-1/2">
+      <DepthReveal className="relative -mx-4 aspect-[4/5] overflow-hidden rounded-none sm:-mx-6 lg:mx-0 lg:w-3/5 lg:rounded-3xl">
         <ParallaxScene
           src={LOCATION_IMAGE}
           alt="Trilha ecológica na região da Praia da Pinheira"
@@ -24,7 +24,7 @@ export function LocationPreview() {
           kenBurns
         />
       </DepthReveal>
-      <div className="flex flex-col gap-6 lg:w-1/2">
+      <div className="flex flex-col gap-6 lg:w-2/5">
         <SectionEyebrow>{t("badge")}</SectionEyebrow>
         <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
           <TextReveal>{t("title")}</TextReveal>

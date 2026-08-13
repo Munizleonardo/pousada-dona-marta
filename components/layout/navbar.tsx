@@ -110,6 +110,17 @@ export function Navbar() {
           <div className="hidden sm:block">
             <LanguageSwitcher solid={scrolled} />
           </div>
+          <Button
+            asChild
+            size="sm"
+            variant="ghost"
+            className={cn(
+              "hidden md:inline-flex",
+              !scrolled && "text-white hover:bg-white/10 hover:text-white"
+            )}
+          >
+            <Link href={{ pathname: "/acomodacoes", hash: "duvidas" }}>{t("faq")}</Link>
+          </Button>
           <Button asChild size="sm" className="hidden sm:inline-flex">
             <Link href="/reservar">{t("bookNow")}</Link>
           </Button>

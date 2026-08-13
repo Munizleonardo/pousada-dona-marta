@@ -29,10 +29,10 @@ export function AccommodationsPreview() {
       <StaggerGroup className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {ACCOMMODATIONS.map((item) => (
           <StaggerItem key={item.id} depth>
-            <TiltCard max={5} className="rounded-3xl">
+            <TiltCard max={5} className="-mx-4 rounded-none sm:-mx-6 md:mx-0 md:rounded-3xl">
               <Link
                 href="/acomodacoes"
-                className="group relative flex h-[440px] flex-col justify-end overflow-hidden rounded-3xl"
+                className="group relative flex h-[440px] flex-col justify-end overflow-hidden rounded-none md:rounded-3xl"
               >
                 <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-110">
                   <Image
