@@ -38,7 +38,7 @@ export function AccommodationGallery({
           </motion.div>
         </AnimatePresence>
       </div>
-      <div className="flex gap-3">
+      <div className="flex gap-3 px-4 sm:px-6 lg:px-0">
         {images.map((item, i) => (
           <motion.button
             key={item.src}
